@@ -124,8 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".github\FUNDING.yml" />
-    <None Include="AdvancedInstaller\ClickUp-cache\part2\FILES.7z" />
-    <None Include="AdvancedInstaller\ClickUp-cache\part2\output-info.ini" />
     <None Include="AdvancedInstaller\ClickUp.aip" />
     <None Include="LICENSE" />
     <None Include="My Project\Application.myapp">
@@ -142,8 +140,6 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdvancedInstaller\ClickUp-cache\cacheIndex.txt" />
-    <Content Include="AdvancedInstaller\Setup Files\ClickUp.exe" />
     <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
