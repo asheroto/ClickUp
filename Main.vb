@@ -4,7 +4,8 @@ Imports Microsoft.Web.WebView2.Core
 Public Class Main
     Dim AllowClose As Boolean = False
 
-    Private Sub WV_NavigationCompleted(sender As Object, e As CoreWebView2NavigationCompletedEventArgs) Handles WV.NavigationCompleted
+    Private Sub WV_NavigationCompleted(sender As Object, e As CoreWebView2NavigationCompletedEventArgs) _
+        Handles WV.NavigationCompleted
         Timer_Title.Enabled = True
     End Sub
 
@@ -22,7 +23,9 @@ Public Class Main
         Hotkey.registerHotkey(Me, "ESC", Hotkey.KeyModifier.Alt)
     End Sub
 
-    Private Sub WV_CoreWebView2InitializationCompleted(sender As Object, e As CoreWebView2InitializationCompletedEventArgs) Handles WV.CoreWebView2InitializationCompleted
+    Private Sub WV_CoreWebView2InitializationCompleted(sender As Object,
+                                                       e As CoreWebView2InitializationCompletedEventArgs) _
+        Handles WV.CoreWebView2InitializationCompleted
         AddHandler WV.CoreWebView2.NewWindowRequested, AddressOf CoreWebView2_NewWindowRequested
     End Sub
 
@@ -40,7 +43,8 @@ Public Class Main
         End Try
     End Sub
 
-    Private Sub SystemTrayIcon_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles SystemTrayIcon.MouseDoubleClick
+    Private Sub SystemTrayIcon_MouseDoubleClick(sender As Object, e As MouseEventArgs) _
+        Handles SystemTrayIcon.MouseDoubleClick
         Show()
         Activate()
     End Sub
@@ -57,10 +61,6 @@ Public Class Main
             Hotkey.handleHotKeyEvent(m.WParam)
         End If
         MyBase.WndProc(m)
-    End Sub
-
-    Private Sub ContextMenu_Opening(sender As Object, e As CancelEventArgs) Handles ContextMenu.Opening
-
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
@@ -87,7 +87,6 @@ Public Class Main
     End Sub
 
     Private Sub WV_Click(sender As Object, e As EventArgs) Handles WV.Click
-
     End Sub
 End Class
 
