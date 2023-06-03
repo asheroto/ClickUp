@@ -31,7 +31,6 @@ Public Class Main
 
     Private Sub CoreWebView2_NewWindowRequested(sender As Object, e As CoreWebView2NewWindowRequestedEventArgs)
         e.Handled = True
-
         Try
             Dim p As New Process
             p.StartInfo.UseShellExecute = True
