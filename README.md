@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/asheroto)
+
 # ClickUp Windows App
 
 Runs ClickUp inside of a native Windows application.
@@ -6,8 +8,10 @@ Keeps ClickUp running in the system tray. To show the window, press **Alt+Esc** 
 
 To start up the program to the system tray (window hidden on launch), pass the `-startup` argument.
 
+Installing the program will add a shortcut to the startup folder.
+
 **Example:**
-```
+```powershell
 .\ClickUp.exe -startup
 ```
 

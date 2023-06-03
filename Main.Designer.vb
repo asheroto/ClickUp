@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Main
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Main
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
@@ -31,6 +31,7 @@ Partial Class Main
         Me.ShowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Startup = New System.Windows.Forms.Timer(Me.components)
+        Me.RestartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.WV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenu.SuspendLayout()
         Me.SuspendLayout()
@@ -60,25 +61,31 @@ Partial Class Main
         '
         'ContextMenu
         '
-        Me.ContextMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.ContextMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem, Me.RestartToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.ContextMenu.Name = "ContextMenu"
-        Me.ContextMenu.Size = New System.Drawing.Size(104, 48)
+        Me.ContextMenu.Size = New System.Drawing.Size(181, 92)
         '
         'ShowToolStripMenuItem
         '
         Me.ShowToolStripMenuItem.Name = "ShowToolStripMenuItem"
-        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ShowToolStripMenuItem.Text = "Show"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'Startup
         '
         Me.Startup.Enabled = True
+        '
+        'RestartToolStripMenuItem
+        '
+        Me.RestartToolStripMenuItem.Name = "RestartToolStripMenuItem"
+        Me.RestartToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RestartToolStripMenuItem.Text = "Restart"
         '
         'Main
         '
@@ -101,8 +108,9 @@ Partial Class Main
     Friend WithEvents WV As Microsoft.Web.WebView2.WinForms.WebView2
     Friend WithEvents Timer_Title As Timer
     Friend WithEvents SystemTrayIcon As NotifyIcon
-    Friend WithEvents ContextMenu As ContextMenuStrip
+    Friend Shadows WithEvents ContextMenu As ContextMenuStrip
     Friend WithEvents ShowToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Startup As Timer
+    Friend WithEvents RestartToolStripMenuItem As ToolStripMenuItem
 End Class
