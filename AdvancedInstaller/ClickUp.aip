@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="19.3" version="19.3" Modules="professional" RootPath="." Language="en" Id="{DC551699-CAB1-423F-8840-D95D9E0FA94D}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="19.3" version="20.3.1" Modules="professional" RootPath="." Language="en" Id="{DC551699-CAB1-423F-8840-D95D9E0FA94D}">
   <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
-    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent;AutorunComponent;CPLAppletComponent;GameUxComponent;SilverlightSlnComponent;FixupComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
+    <ROW Name="HiddenItems" Value="ActSyncAppComponent;CPLAppletComponent;AppXAppDetailsComponent;FixupComponent;AppXCapabilitiesComponent;AppXDependenciesComponent;AppXProductDetailsComponent;AppXVisualAssetsComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
-    <ROW Property="AI_CURRENT_YEAR" Value="2022" ValueLocId="-"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2023" ValueLocId="-"/>
     <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_PACKAGING_TOOL" Value="Advanced Installer 20.3.1 build dae8a046" ValueLocId="-"/>
     <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_INTERNET_CONNECTION"/>
     <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
@@ -17,10 +18,10 @@
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="Manufacturer" Value="Google"/>
-    <ROW Property="ProductCode" Value="1033:{1DEF3B87-8764-4DE2-8D1D-3D80DF76E4E2} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{3E9737CC-672F-432C-8AEA-BDAE7A503373} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="ClickUp"/>
-    <ROW Property="ProductVersion" Value="0.0.6.1"/>
+    <ROW Property="ProductVersion" Value="1.0.0.0"/>
     <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:ReallySuppress"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
@@ -38,74 +39,14 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
-    <ROW Directory="AutoLaunchProtocolsComponent_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="AUTOLA~1|AutoLaunchProtocolsComponent"/>
-    <ROW Directory="AutofillStrikeDatabase_Dir" Directory_Parent="Default_Dir" DefaultDir="AUTOFI~1|AutofillStrikeDatabase"/>
-    <ROW Directory="AvailabilityDB_Dir" Directory_Parent="FeatureEngagementTracker_Dir" DefaultDir="AVAILA~1|AvailabilityDB"/>
-    <ROW Directory="BudgetDatabase_Dir" Directory_Parent="Default_Dir" DefaultDir="BUDGET~1|BudgetDatabase"/>
-    <ROW Directory="CacheStorage_Dir" Directory_Parent="ServiceWorker_Dir" DefaultDir="CACHES~1|CacheStorage"/>
-    <ROW Directory="Cache_Data_Dir" Directory_Parent="Cache_Dir" DefaultDir="CACHE_~1|Cache_Data"/>
-    <ROW Directory="Cache_Dir" Directory_Parent="Default_Dir" DefaultDir="Cache"/>
-    <ROW Directory="CertificateRevocation_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="CERTIF~1|CertificateRevocation"/>
-    <ROW Directory="ClickUp.exe.WebView2_Dir" Directory_Parent="APPDIR" DefaultDir="CLICKU~1.WEB|ClickUp.exe.WebView2"/>
-    <ROW Directory="CodeCache_Dir" Directory_Parent="Default_Dir" DefaultDir="CODECA~1|Code Cache"/>
-    <ROW Directory="Crashpad_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="Crashpad"/>
-    <ROW Directory="Default_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="Default"/>
     <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
-    <ROW Directory="EBWebView_Dir" Directory_Parent="ClickUp.exe.WebView2_Dir" DefaultDir="EBWEBV~1|EBWebView"/>
-    <ROW Directory="EdgeCoupons_Dir" Directory_Parent="Default_Dir" DefaultDir="EDGECO~1|EdgeCoupons"/>
-    <ROW Directory="EventDB_Dir" Directory_Parent="FeatureEngagementTracker_Dir" DefaultDir="EventDB"/>
-    <ROW Directory="ExtensionScripts_Dir" Directory_Parent="Default_Dir" DefaultDir="EXTENS~1|Extension Scripts"/>
-    <ROW Directory="ExtensionState_Dir" Directory_Parent="Default_Dir" DefaultDir="EXTENS~2|Extension State"/>
-    <ROW Directory="FeatureEngagementTracker_Dir" Directory_Parent="Default_Dir" DefaultDir="FEATUR~1|Feature Engagement Tracker"/>
-    <ROW Directory="GPUCache_3_Dir" Directory_Parent="GrShaderCache_Dir" DefaultDir="GPUCache"/>
-    <ROW Directory="GPUCache_4_Dir" Directory_Parent="ShaderCache_Dir" DefaultDir="GPUCache"/>
-    <ROW Directory="GPUCache_Dir" Directory_Parent="Default_Dir" DefaultDir="GPUCache"/>
-    <ROW Directory="GrShaderCache_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="GRSHAD~1|GrShaderCache"/>
-    <ROW Directory="LocalStorage_Dir" Directory_Parent="Default_Dir" DefaultDir="LOCALS~1|Local Storage"/>
-    <ROW Directory="Network_Dir" Directory_Parent="Default_Dir" DefaultDir="Network"/>
-    <ROW Directory="OptimizationGuidePredictionMode_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="OPTIMI~1|OptimizationGuidePredictionModels"/>
-    <ROW Directory="OriginTrials_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="ORIGIN~1|OriginTrials"/>
     <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
-    <ROW Directory="SafeBrowsingNetwork_Dir" Directory_Parent="Default_Dir" DefaultDir="SAFEBR~1|Safe Browsing Network"/>
-    <ROW Directory="ServiceWorker_Dir" Directory_Parent="Default_Dir" DefaultDir="SERVIC~1|Service Worker"/>
-    <ROW Directory="SessionStorage_Dir" Directory_Parent="Default_Dir" DefaultDir="SESSIO~1|Session Storage"/>
-    <ROW Directory="Sessions_Dir" Directory_Parent="Default_Dir" DefaultDir="Sessions"/>
-    <ROW Directory="ShaderCache_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="SHADER~1|ShaderCache"/>
-    <ROW Directory="SiteCharacteristicsDatabase_Dir" Directory_Parent="Default_Dir" DefaultDir="SITECH~1|Site Characteristics Database"/>
-    <ROW Directory="SmartScreen_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="SMARTS~1|SmartScreen"/>
-    <ROW Directory="SpeechRecognition_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="SPEECH~1|Speech Recognition"/>
     <ROW Directory="StartupFolder" Directory_Parent="TARGETDIR" DefaultDir="STARTU~1|StartupFolder" IsPseudoRoot="1"/>
-    <ROW Directory="SubresourceFilter_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="SUBRES~1|Subresource Filter"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
-    <ROW Directory="TrustProtectionLists_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="TRUSTP~1|Trust Protection Lists"/>
-    <ROW Directory="UnindexedRules_Dir" Directory_Parent="SubresourceFilter_Dir" DefaultDir="UNINDE~1|Unindexed Rules"/>
-    <ROW Directory="WidevineCdm_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="WIDEVI~1|WidevineCdm"/>
-    <ROW Directory="ZxcvbnData_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="ZXCVBN~1|ZxcvbnData"/>
-    <ROW Directory="attachments_Dir" Directory_Parent="Crashpad_Dir" DefaultDir="ATTACH~1|attachments"/>
-    <ROW Directory="bf180e98f472ea9fececfde0154a9_Dir" Directory_Parent="e0c1037b627040b1fca982cf0cb9ee2_Dir" DefaultDir="762BF1~1|762bf180-e98f-472e-a9fe-cecfde0154a9"/>
-    <ROW Directory="blob_storage_Dir" Directory_Parent="Default_Dir" DefaultDir="BLOB_S~1|blob_storage"/>
-    <ROW Directory="c9217c22048858499216272763396_Dir" Directory_Parent="blob_storage_Dir" DefaultDir="954C92~1|954c9217-c220-4885-8499-216272763396"/>
-    <ROW Directory="coupons_data.db_Dir" Directory_Parent="EdgeCoupons_Dir" DefaultDir="COUPON~1.DB|coupons_data.db"/>
-    <ROW Directory="databases_Dir" Directory_Parent="Default_Dir" DefaultDir="DATABA~1|databases"/>
-    <ROW Directory="e0c1037b627040b1fca982cf0cb9ee2_Dir" Directory_Parent="CacheStorage_Dir" DefaultDir="06E0C1~1|06e0c1037b627040b1fca982cf0cb9ee2a0a713e"/>
-    <ROW Directory="hyphendata_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="HYPHEN~1|hyphen-data"/>
-    <ROW Directory="indexdir_3_Dir" Directory_Parent="wasm_Dir" DefaultDir="INDEX-~1|index-dir"/>
-    <ROW Directory="indexdir_4_Dir" Directory_Parent="bf180e98f472ea9fececfde0154a9_Dir" DefaultDir="INDEX-~1|index-dir"/>
-    <ROW Directory="indexdir_Dir" Directory_Parent="js_Dir" DefaultDir="INDEX-~1|index-dir"/>
-    <ROW Directory="js_Dir" Directory_Parent="CodeCache_Dir" DefaultDir="js"/>
-    <ROW Directory="leveldb_Dir" Directory_Parent="LocalStorage_Dir" DefaultDir="leveldb"/>
-    <ROW Directory="local_Dir" Directory_Parent="SmartScreen_Dir" DefaultDir="local"/>
-    <ROW Directory="metadata_Dir" Directory_Parent="shared_proto_db_Dir" DefaultDir="metadata"/>
     <ROW Directory="native_1_Dir" Directory_Parent="winx64_Dir" DefaultDir="native"/>
     <ROW Directory="native_2_Dir" Directory_Parent="winx86_Dir" DefaultDir="native"/>
     <ROW Directory="native_Dir" Directory_Parent="winarm64_Dir" DefaultDir="native"/>
-    <ROW Directory="optimization_guide_hint_cache_s_Dir" Directory_Parent="Default_Dir" DefaultDir="OPTIMI~1|optimization_guide_hint_cache_store"/>
-    <ROW Directory="optimization_guide_model_and_fe_Dir" Directory_Parent="Default_Dir" DefaultDir="OPTIMI~2|optimization_guide_model_and_features_store"/>
-    <ROW Directory="remote_Dir" Directory_Parent="SmartScreen_Dir" DefaultDir="remote"/>
-    <ROW Directory="reports_Dir" Directory_Parent="Crashpad_Dir" DefaultDir="reports"/>
     <ROW Directory="runtimes_Dir" Directory_Parent="APPDIR" DefaultDir="runtimes"/>
-    <ROW Directory="shared_proto_db_Dir" Directory_Parent="Default_Dir" DefaultDir="SHARED~1|shared_proto_db"/>
-    <ROW Directory="wasm_Dir" Directory_Parent="CodeCache_Dir" DefaultDir="wasm"/>
     <ROW Directory="winarm64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="WIN-AR~1|win-arm64"/>
     <ROW Directory="winx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x64"/>
     <ROW Directory="winx86_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x86"/>
@@ -113,284 +54,34 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="AI_ExePath" ComponentId="{3633B1DA-DDDB-464F-9C23-6DFBE3FC8A9F}" Directory_="APPDIR" Attributes="260" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{A9606BD9-BB20-4AF3-9F1B-574DFDC78610}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="AutoLaunchProtocolsComponent" ComponentId="{4B06F3B0-21D0-43B7-B19D-BF800A7C9C40}" Directory_="AutoLaunchProtocolsComponent_Dir" Attributes="0"/>
-    <ROW Component="CertificateRevocation" ComponentId="{87A21832-B452-4038-9785-CD01A949552A}" Directory_="CertificateRevocation_Dir" Attributes="0"/>
     <ROW Component="ClickUp.exe" ComponentId="{7AB6E8ED-C805-42F7-87E9-9CC71A6D5256}" Directory_="APPDIR" Attributes="0" KeyPath="ClickUp.exe"/>
     <ROW Component="ClickUp.exe.config" ComponentId="{CB8F6628-A11D-4147-BF03-97A7BCA31ACB}" Directory_="APPDIR" Attributes="0" KeyPath="ClickUp.exe.config" Type="0"/>
-    <ROW Component="Cookies" ComponentId="{E1704952-B0A3-4589-B8E2-75907DE3B1BB}" Directory_="Network_Dir" Attributes="0" KeyPath="Cookies" Type="0"/>
-    <ROW Component="Databases.db" ComponentId="{9EFFB665-A957-4550-AD14-12AFBE6F6E31}" Directory_="databases_Dir" Attributes="0" KeyPath="Databases.db" Type="0"/>
-    <ROW Component="ExtensionActivityComp" ComponentId="{9473AAD6-D3BD-43D5-B433-E1B0F3260C92}" Directory_="Default_Dir" Attributes="0" KeyPath="ExtensionActivityComp" Type="0"/>
-    <ROW Component="LOCK" ComponentId="{41807FF0-9E1F-4790-B04C-1C6AE6954988}" Directory_="AutofillStrikeDatabase_Dir" Attributes="0" KeyPath="LOCK" Type="0"/>
-    <ROW Component="LOCK_10" ComponentId="{EF189F23-F5CC-44FE-B37B-1CED3A9791D9}" Directory_="optimization_guide_model_and_fe_Dir" Attributes="0" KeyPath="LOCK_24" Type="0"/>
-    <ROW Component="LOCK_6" ComponentId="{A2EDB855-9B78-4A73-9E31-EA1E38135935}" Directory_="BudgetDatabase_Dir" Attributes="0" KeyPath="LOCK_15" Type="0"/>
-    <ROW Component="LOCK_7" ComponentId="{DC8C81E8-9330-49BA-8FEA-31F784E90A4A}" Directory_="AvailabilityDB_Dir" Attributes="0" KeyPath="LOCK_19" Type="0"/>
-    <ROW Component="LOCK_8" ComponentId="{37E0F09C-838C-4030-B8F5-5737F2CE2B94}" Directory_="EventDB_Dir" Attributes="0" KeyPath="LOCK_20" Type="0"/>
-    <ROW Component="LOCK_9" ComponentId="{6E5392EE-F024-4723-B5BA-D0201EE561AF}" Directory_="optimization_guide_hint_cache_s_Dir" Attributes="0" KeyPath="LOCK_23" Type="0"/>
-    <ROW Component="LastVersion" ComponentId="{672916EA-9E10-41EA-92EB-B35ACA1876FF}" Directory_="EBWebView_Dir" Attributes="0" KeyPath="LastVersion" Type="0"/>
     <ROW Component="Microsoft.Web.WebView2.Core.dll" ComponentId="{6FBCDB93-D502-42D2-B201-47482E42A5C2}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Web.WebView2.Core.dll"/>
     <ROW Component="Microsoft.Web.WebView2.WinForms.dll" ComponentId="{AD17CAE5-6E78-4EAD-9A79-A5FAE664F5C2}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Web.WebView2.WinForms.dll"/>
     <ROW Component="Microsoft.Web.WebView2.Wpf.dll" ComponentId="{DF2342BD-B5C5-42AB-8462-72583B96ED07}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Web.WebView2.Wpf.dll"/>
-    <ROW Component="NetworkDataMigrated" ComponentId="{BFC6357C-9199-4F74-9465-C0593D7E5B36}" Directory_="SafeBrowsingNetwork_Dir" Attributes="0" KeyPath="NetworkDataMigrated_2" Type="0"/>
-    <ROW Component="OptimizationGuidePredictionModels" ComponentId="{C324FF40-4789-452D-B89F-25DA170C742F}" Directory_="OptimizationGuidePredictionMode_Dir" Attributes="0"/>
-    <ROW Component="OriginTrials" ComponentId="{79BA2896-4C03-4898-9101-D3E04FB9DDE3}" Directory_="OriginTrials_Dir" Attributes="0"/>
     <ROW Component="ProductInformation" ComponentId="{0EBDE268-8080-441D-8EF4-254243AD90A4}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
     <ROW Component="SHORTCUTDIR" ComponentId="{6E05D11B-9E27-47BC-A2EB-1659BD01033A}" Directory_="SHORTCUTDIR" Attributes="0"/>
-    <ROW Component="Sessions" ComponentId="{E2065BBF-7BEB-4091-BB24-FC527120EF6B}" Directory_="Sessions_Dir" Attributes="0"/>
-    <ROW Component="SpeechRecognition" ComponentId="{86C660A9-6BB3-4739-A02C-FAF51EE298AB}" Directory_="SpeechRecognition_Dir" Attributes="0"/>
-    <ROW Component="TrustProtectionLists" ComponentId="{D5526E8B-8F1F-48BB-8694-982015BB6BBB}" Directory_="TrustProtectionLists_Dir" Attributes="0"/>
-    <ROW Component="UnindexedRules" ComponentId="{4B94B999-D565-4B95-BBB3-3BEDA1A6A39A}" Directory_="UnindexedRules_Dir" Attributes="0"/>
     <ROW Component="WebView2Loader.dll" ComponentId="{154E55FA-32FD-4B00-A3B8-95B2677D90ED}" Directory_="native_Dir" Attributes="256" KeyPath="WebView2Loader.dll"/>
     <ROW Component="WebView2Loader.dll_1" ComponentId="{A4B3F93E-D209-48C3-A079-4C5565A2BB57}" Directory_="native_1_Dir" Attributes="256" KeyPath="WebView2Loader.dll_1"/>
     <ROW Component="WebView2Loader.dll_2" ComponentId="{2377BE7B-68C8-49BA-A8C8-856D918A6414}" Directory_="native_2_Dir" Attributes="0" KeyPath="WebView2Loader.dll_2"/>
-    <ROW Component="WidevineCdm" ComponentId="{4E2C0CEB-B39E-42D2-BDB6-5884255F8028}" Directory_="WidevineCdm_Dir" Attributes="0"/>
-    <ROW Component="ZxcvbnData" ComponentId="{C182D88C-89F6-435C-B2D3-29430B9ECF65}" Directory_="ZxcvbnData_Dir" Attributes="0"/>
-    <ROW Component="attachments" ComponentId="{D237A7CB-E774-48F9-9F1D-1432E6847D82}" Directory_="attachments_Dir" Attributes="0"/>
-    <ROW Component="c9217c22048858499216272763396" ComponentId="{CA27A802-A008-46CD-9590-2173157073E9}" Directory_="c9217c22048858499216272763396_Dir" Attributes="0"/>
-    <ROW Component="cache" ComponentId="{93416EFF-A11C-4261-B5E9-453C0054AB1D}" Directory_="local_Dir" Attributes="0" KeyPath="cache" Type="0"/>
-    <ROW Component="ce64_0" ComponentId="{D40328CC-4161-4FA5-8C4A-61807A261AA7}" Directory_="js_Dir" Attributes="0" KeyPath="ce64_0" Type="0"/>
-    <ROW Component="data_0" ComponentId="{43381D0B-BE0F-4319-A33B-230A01DA8D48}" Directory_="Cache_Data_Dir" Attributes="0" KeyPath="data_0" Type="0"/>
-    <ROW Component="data_0_4" ComponentId="{CA7CCA9C-E475-4D36-A28D-EBEF928E554B}" Directory_="GPUCache_Dir" Attributes="0" KeyPath="data_0_4" Type="0"/>
-    <ROW Component="data_0_5" ComponentId="{FDB93362-1B7D-489F-B280-88E9B7993AA9}" Directory_="GPUCache_3_Dir" Attributes="0" KeyPath="data_0_5" Type="0"/>
-    <ROW Component="data_0_6" ComponentId="{6477AB5E-492C-4456-B98F-897158E98243}" Directory_="GPUCache_4_Dir" Attributes="0" KeyPath="data_0_6" Type="0"/>
-    <ROW Component="edgeSettings" ComponentId="{C9E9BA23-7E86-40CE-B72D-86520207D83F}" Directory_="remote_Dir" Attributes="0" KeyPath="edgeSettings" Type="0"/>
-    <ROW Component="hyphendata" ComponentId="{5180E0AC-5359-4A15-95A6-F406E57BAEF4}" Directory_="hyphendata_Dir" Attributes="0"/>
-    <ROW Component="index" ComponentId="{2C27BF08-65D5-4ED0-BD3E-7483BCB3299F}" Directory_="wasm_Dir" Attributes="0" KeyPath="index_8" Type="0"/>
-    <ROW Component="index.txt" ComponentId="{60E486C5-3D88-4618-8174-FFFF101EC4DB}" Directory_="e0c1037b627040b1fca982cf0cb9ee2_Dir" Attributes="0" KeyPath="index.txt" Type="0"/>
-    <ROW Component="index_2" ComponentId="{A1EB3AF6-EEA5-498E-ACB0-88488D68C046}" Directory_="bf180e98f472ea9fececfde0154a9_Dir" Attributes="0" KeyPath="index_10" Type="0"/>
-    <ROW Component="log" ComponentId="{E69DCE77-AD75-4070-A6DA-6F64B3608285}" Directory_="coupons_data.db_Dir" Attributes="0" KeyPath="log_24" Type="0"/>
-    <ROW Component="log_10" ComponentId="{8C83C728-62B8-440C-93D7-289BA151F15D}" Directory_="leveldb_Dir" Attributes="0" KeyPath="log_32" Type="0"/>
-    <ROW Component="log_11" ComponentId="{F1A3BB1F-2D67-40A4-9F5A-D526A4450157}" Directory_="SessionStorage_Dir" Attributes="0" KeyPath="log_37" Type="0"/>
-    <ROW Component="log_12" ComponentId="{682EF9E3-B60C-4DE9-9974-C172B33288F7}" Directory_="shared_proto_db_Dir" Attributes="0" KeyPath="log_39" Type="0"/>
-    <ROW Component="log_13" ComponentId="{2A240B6E-61CE-482C-961E-AB6BE7106BD9}" Directory_="metadata_Dir" Attributes="0" KeyPath="log_41" Type="0"/>
-    <ROW Component="log_14" ComponentId="{0F27C2F0-CBEB-40BB-AC17-342436C93A2A}" Directory_="SiteCharacteristicsDatabase_Dir" Attributes="0" KeyPath="log_43" Type="0"/>
-    <ROW Component="log_8" ComponentId="{255CA791-F922-410F-AFEA-8C2E3D830A09}" Directory_="ExtensionScripts_Dir" Attributes="0" KeyPath="log_26" Type="0"/>
-    <ROW Component="log_9" ComponentId="{BDFC80F5-EB83-410C-A8F9-E7176019956C}" Directory_="ExtensionState_Dir" Attributes="0" KeyPath="log_28" Type="0"/>
-    <ROW Component="metadata" ComponentId="{57EAACEE-9C8E-48F8-A05B-B7FA5D6B5A16}" Directory_="Crashpad_Dir" Attributes="0" KeyPath="metadata" Type="0"/>
-    <ROW Component="reports" ComponentId="{3017DD2B-EC94-4609-81D9-C7A39915DD41}" Directory_="reports_Dir" Attributes="0"/>
-    <ROW Component="therealindex" ComponentId="{84511D48-272D-4CBE-AC5E-C2AB081EE8C1}" Directory_="indexdir_Dir" Attributes="0" KeyPath="therealindex" Type="0"/>
-    <ROW Component="therealindex_3" ComponentId="{0D1D5B7A-EAC3-4858-91CF-92291051E80B}" Directory_="indexdir_3_Dir" Attributes="0" KeyPath="therealindex_3" Type="0"/>
-    <ROW Component="therealindex_4" ComponentId="{607B67BA-D1B7-4DC8-9A83-72755DB1D4C1}" Directory_="indexdir_4_Dir" Attributes="0" KeyPath="therealindex_4" Type="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="ClickUp.exe" Component_="ClickUp.exe" FileName="ClickUp.exe" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="ClickUp.exe.config" Component_="ClickUp.exe.config" FileName="CLICKU~1.CON|ClickUp.exe.config" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.config" SelfReg="false"/>
-    <ROW File="ClickUp.xml" Component_="ClickUp.exe.config" FileName="ClickUp.xml" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.xml" SelfReg="false"/>
-    <ROW File="Microsoft.Web.WebView2.Core.dll" Component_="Microsoft.Web.WebView2.Core.dll" FileName="MICROS~1.DLL|Microsoft.Web.WebView2.Core.dll" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\Microsoft.Web.WebView2.Core.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Web.WebView2.Core.xml" Component_="ClickUp.exe.config" FileName="MICROS~1.XML|Microsoft.Web.WebView2.Core.xml" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\Microsoft.Web.WebView2.Core.xml" SelfReg="false"/>
-    <ROW File="Microsoft.Web.WebView2.WinForms.dll" Component_="Microsoft.Web.WebView2.WinForms.dll" FileName="MICROS~2.DLL|Microsoft.Web.WebView2.WinForms.dll" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\Microsoft.Web.WebView2.WinForms.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Web.WebView2.WinForms.xml" Component_="ClickUp.exe.config" FileName="MICROS~2.XML|Microsoft.Web.WebView2.WinForms.xml" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\Microsoft.Web.WebView2.WinForms.xml" SelfReg="false"/>
-    <ROW File="Microsoft.Web.WebView2.Wpf.dll" Component_="Microsoft.Web.WebView2.Wpf.dll" FileName="MICROS~3.DLL|Microsoft.Web.WebView2.Wpf.dll" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\Microsoft.Web.WebView2.Wpf.dll" SelfReg="false"/>
-    <ROW File="Microsoft.Web.WebView2.Wpf.xml" Component_="ClickUp.exe.config" FileName="MICROS~3.XML|Microsoft.Web.WebView2.Wpf.xml" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\Microsoft.Web.WebView2.Wpf.xml" SelfReg="false"/>
-    <ROW File="WebView2Loader.dll" Component_="WebView2Loader.dll" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\runtimes\win-arm64\native\WebView2Loader.dll" SelfReg="false"/>
-    <ROW File="WebView2Loader.dll_1" Component_="WebView2Loader.dll_1" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\runtimes\win-x64\native\WebView2Loader.dll" SelfReg="false"/>
-    <ROW File="WebView2Loader.dll_2" Component_="WebView2Loader.dll_2" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\runtimes\win-x86\native\WebView2Loader.dll" SelfReg="false"/>
-    <ROW File="metadata" Component_="metadata" FileName="metadata" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Crashpad\metadata" SelfReg="false"/>
-    <ROW File="settings.dat" Component_="metadata" FileName="settings.dat" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Crashpad\settings.dat" SelfReg="false"/>
-    <ROW File="throttle_store.dat" Component_="metadata" FileName="THROTT~1.DAT|throttle_store.dat" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Crashpad\throttle_store.dat" SelfReg="false"/>
-    <ROW File="LOCK" Component_="LOCK" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\AutofillStrikeDatabase\LOCK" SelfReg="false"/>
-    <ROW File="LOG" Component_="LOCK" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\AutofillStrikeDatabase\LOG" SelfReg="false"/>
-    <ROW File="LOCK_15" Component_="LOCK_6" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\BudgetDatabase\LOCK" SelfReg="false"/>
-    <ROW File="LOG_23" Component_="LOCK_6" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\BudgetDatabase\LOG" SelfReg="false"/>
-    <ROW File="data_0" Component_="data_0" FileName="data_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\data_0" SelfReg="false"/>
-    <ROW File="data_1" Component_="data_0" FileName="data_1" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\data_1" SelfReg="false"/>
-    <ROW File="data_2" Component_="data_0" FileName="data_2" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\data_2" SelfReg="false"/>
-    <ROW File="data_3" Component_="data_0" FileName="data_3" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\data_3" SelfReg="false"/>
-    <ROW File="f_000001" Component_="data_0" FileName="f_000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000001" SelfReg="false"/>
-    <ROW File="f_000002" Component_="data_0" FileName="f_000002" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000002" SelfReg="false"/>
-    <ROW File="f_000003" Component_="data_0" FileName="f_000003" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000003" SelfReg="false"/>
-    <ROW File="f_000004" Component_="data_0" FileName="f_000004" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000004" SelfReg="false"/>
-    <ROW File="f_000005" Component_="data_0" FileName="f_000005" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000005" SelfReg="false"/>
-    <ROW File="f_000006" Component_="data_0" FileName="f_000006" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000006" SelfReg="false"/>
-    <ROW File="f_000007" Component_="data_0" FileName="f_000007" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000007" SelfReg="false"/>
-    <ROW File="f_000008" Component_="data_0" FileName="f_000008" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000008" SelfReg="false"/>
-    <ROW File="f_000009" Component_="data_0" FileName="f_000009" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000009" SelfReg="false"/>
-    <ROW File="f_00000a" Component_="data_0" FileName="f_00000a" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_00000a" SelfReg="false"/>
-    <ROW File="f_00000b" Component_="data_0" FileName="f_00000b" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_00000b" SelfReg="false"/>
-    <ROW File="f_00000c" Component_="data_0" FileName="f_00000c" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_00000c" SelfReg="false"/>
-    <ROW File="f_00000d" Component_="data_0" FileName="f_00000d" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_00000d" SelfReg="false"/>
-    <ROW File="f_00000e" Component_="data_0" FileName="f_00000e" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_00000e" SelfReg="false"/>
-    <ROW File="f_00000f" Component_="data_0" FileName="f_00000f" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_00000f" SelfReg="false"/>
-    <ROW File="f_000010" Component_="data_0" FileName="f_000010" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000010" SelfReg="false"/>
-    <ROW File="f_000011" Component_="data_0" FileName="f_000011" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000011" SelfReg="false"/>
-    <ROW File="f_000012" Component_="data_0" FileName="f_000012" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000012" SelfReg="false"/>
-    <ROW File="f_000013" Component_="data_0" FileName="f_000013" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000013" SelfReg="false"/>
-    <ROW File="f_000014" Component_="data_0" FileName="f_000014" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000014" SelfReg="false"/>
-    <ROW File="f_000015" Component_="data_0" FileName="f_000015" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000015" SelfReg="false"/>
-    <ROW File="f_000016" Component_="data_0" FileName="f_000016" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000016" SelfReg="false"/>
-    <ROW File="f_000017" Component_="data_0" FileName="f_000017" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000017" SelfReg="false"/>
-    <ROW File="f_000018" Component_="data_0" FileName="f_000018" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000018" SelfReg="false"/>
-    <ROW File="f_000019" Component_="data_0" FileName="f_000019" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000019" SelfReg="false"/>
-    <ROW File="f_00001a" Component_="data_0" FileName="f_00001a" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_00001a" SelfReg="false"/>
-    <ROW File="f_00001b" Component_="data_0" FileName="f_00001b" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_00001b" SelfReg="false"/>
-    <ROW File="f_00001c" Component_="data_0" FileName="f_00001c" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_00001c" SelfReg="false"/>
-    <ROW File="index" Component_="data_0" FileName="index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\index" SelfReg="false"/>
-    <ROW File="ce64_0" Component_="ce64_0" FileName="039649~1|039649753074ce64_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\039649753074ce64_0" SelfReg="false"/>
-    <ROW File="ace042fb819a7f_0" Component_="ce64_0" FileName="05ACE0~1|05ace042fb819a7f_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\05ace042fb819a7f_0" SelfReg="false"/>
-    <ROW File="e471016209c22a_0" Component_="ce64_0" FileName="06E471~1|06e471016209c22a_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\06e471016209c22a_0" SelfReg="false"/>
-    <ROW File="af6f25bc4784_0" Component_="ce64_0" FileName="0777AF~1|0777af6f25bc4784_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\0777af6f25bc4784_0" SelfReg="false"/>
-    <ROW File="f8b9a0ad28cf_0" Component_="ce64_0" FileName="1027F8~1|1027f8b9a0ad28cf_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\1027f8b9a0ad28cf_0" SelfReg="false"/>
-    <ROW File="a675acf8b6fe9_0" Component_="ce64_0" FileName="115A67~1|115a675acf8b6fe9_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\115a675acf8b6fe9_0" SelfReg="false"/>
-    <ROW File="cfdc856bd10c6_0" Component_="ce64_0" FileName="198CFD~1|198cfdc856bd10c6_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\198cfdc856bd10c6_0" SelfReg="false"/>
-    <ROW File="ff89a4a17384c1_0" Component_="ce64_0" FileName="24FF89~1|24ff89a4a17384c1_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\24ff89a4a17384c1_0" SelfReg="false"/>
-    <ROW File="a1bd67dc66da71_0" Component_="ce64_0" FileName="26A1BD~1|26a1bd67dc66da71_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\26a1bd67dc66da71_0" SelfReg="false"/>
-    <ROW File="ea129324ba3616a_0" Component_="ce64_0" FileName="2EA129~1|2ea129324ba3616a_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\2ea129324ba3616a_0" SelfReg="false"/>
-    <ROW File="afa4d21b0097d19_0" Component_="ce64_0" FileName="3AFA4D~1|3afa4d21b0097d19_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\3afa4d21b0097d19_0" SelfReg="false"/>
-    <ROW File="f1b5881cc9cf_0" Component_="ce64_0" FileName="4060F1~1|4060f1b5881cc9cf_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\4060f1b5881cc9cf_0" SelfReg="false"/>
-    <ROW File="e84cf1a6f08f19_0" Component_="ce64_0" FileName="43E84C~1|43e84cf1a6f08f19_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\43e84cf1a6f08f19_0" SelfReg="false"/>
-    <ROW File="f0221acc2aa411_0" Component_="ce64_0" FileName="45F022~1|45f0221acc2aa411_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\45f0221acc2aa411_0" SelfReg="false"/>
-    <ROW File="c6b9acbd4295425_0" Component_="ce64_0" FileName="4C6B9A~1|4c6b9acbd4295425_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\4c6b9acbd4295425_0" SelfReg="false"/>
-    <ROW File="d668b41bc144138_0" Component_="ce64_0" FileName="4D668B~1|4d668b41bc144138_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\4d668b41bc144138_0" SelfReg="false"/>
-    <ROW File="f92b5291f1bc0_0" Component_="ce64_0" FileName="561F92~1|561f92b5291f1bc0_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\561f92b5291f1bc0_0" SelfReg="false"/>
-    <ROW File="c062d2979a90f9a_0" Component_="ce64_0" FileName="5C062D~1|5c062d2979a90f9a_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\5c062d2979a90f9a_0" SelfReg="false"/>
-    <ROW File="fe77b773c80924a_0" Component_="ce64_0" FileName="5FE77B~1|5fe77b773c80924a_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\5fe77b773c80924a_0" SelfReg="false"/>
-    <ROW File="d60bb0bfb5747b_0" Component_="ce64_0" FileName="71D60B~1|71d60bb0bfb5747b_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\71d60bb0bfb5747b_0" SelfReg="false"/>
-    <ROW File="cf4084141f2b2d_0" Component_="ce64_0" FileName="77CF40~1|77cf4084141f2b2d_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\77cf4084141f2b2d_0" SelfReg="false"/>
-    <ROW File="ac2a8d804f61235_0" Component_="ce64_0" FileName="7AC2A8~1|7ac2a8d804f61235_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\7ac2a8d804f61235_0" SelfReg="false"/>
-    <ROW File="a61620214534_0" Component_="ce64_0" FileName="8340A6~1|8340a61620214534_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\8340a61620214534_0" SelfReg="false"/>
-    <ROW File="bc8f7158a7f9_0" Component_="ce64_0" FileName="9790BC~1|9790bc8f7158a7f9_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\9790bc8f7158a7f9_0" SelfReg="false"/>
-    <ROW File="c39b06cf0522925_0" Component_="ce64_0" FileName="9C39B0~1|9c39b06cf0522925_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\9c39b06cf0522925_0" SelfReg="false"/>
-    <ROW File="d03ca7e6881e34e_0" Component_="ce64_0" FileName="9D03CA~1|9d03ca7e6881e34e_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\9d03ca7e6881e34e_0" SelfReg="false"/>
-    <ROW File="a728a88cf39bf6bb_0" Component_="ce64_0" FileName="A728A8~1|a728a88cf39bf6bb_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\a728a88cf39bf6bb_0" SelfReg="false"/>
-    <ROW File="a9a5e26bb80db3bf_0" Component_="ce64_0" FileName="A9A5E2~1|a9a5e26bb80db3bf_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\a9a5e26bb80db3bf_0" SelfReg="false"/>
-    <ROW File="be2d99002a93a98a_0" Component_="ce64_0" FileName="BE2D99~1|be2d99002a93a98a_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\be2d99002a93a98a_0" SelfReg="false"/>
-    <ROW File="c041b4a626709170_0" Component_="ce64_0" FileName="C041B4~1|c041b4a626709170_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\c041b4a626709170_0" SelfReg="false"/>
-    <ROW File="c2b7c7dc6ce8da37_0" Component_="ce64_0" FileName="C2B7C7~1|c2b7c7dc6ce8da37_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\c2b7c7dc6ce8da37_0" SelfReg="false"/>
-    <ROW File="cc468822ff15f0c0_0" Component_="ce64_0" FileName="CC4688~1|cc468822ff15f0c0_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\cc468822ff15f0c0_0" SelfReg="false"/>
-    <ROW File="d0efd798a59cc2b3_0" Component_="ce64_0" FileName="D0EFD7~1|d0efd798a59cc2b3_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\d0efd798a59cc2b3_0" SelfReg="false"/>
-    <ROW File="d1e77cef7d85a72b_0" Component_="ce64_0" FileName="D1E77C~1|d1e77cef7d85a72b_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\d1e77cef7d85a72b_0" SelfReg="false"/>
-    <ROW File="ef6574ddf1b7f3ee_0" Component_="ce64_0" FileName="EF6574~1|ef6574ddf1b7f3ee_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\ef6574ddf1b7f3ee_0" SelfReg="false"/>
-    <ROW File="f8a2aae8c7eea631_0" Component_="ce64_0" FileName="F8A2AA~1|f8a2aae8c7eea631_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\f8a2aae8c7eea631_0" SelfReg="false"/>
-    <ROW File="facfe00865147dda_0" Component_="ce64_0" FileName="FACFE0~1|facfe00865147dda_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\facfe00865147dda_0" SelfReg="false"/>
-    <ROW File="index_7" Component_="ce64_0" FileName="index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\index" SelfReg="false"/>
-    <ROW File="therealindex" Component_="therealindex" FileName="THE-RE~1|the-real-index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\index-dir\the-real-index" SelfReg="false"/>
-    <ROW File="index_8" Component_="index" FileName="index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\wasm\index" SelfReg="false"/>
-    <ROW File="therealindex_3" Component_="therealindex_3" FileName="THE-RE~1|the-real-index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\wasm\index-dir\the-real-index" SelfReg="false"/>
-    <ROW File="Databases.db" Component_="Databases.db" FileName="DATABA~1.DB|Databases.db" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\databases\Databases.db" SelfReg="false"/>
-    <ROW File="Databases.dbjournal" Component_="Databases.db" FileName="DATABA~1.DB-|Databases.db-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\databases\Databases.db-journal" SelfReg="false"/>
-    <ROW File="log_24" Component_="log" FileName="000003.log" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\EdgeCoupons\coupons_data.db\000003.log" SelfReg="false"/>
-    <ROW File="CURRENT" Component_="log" FileName="CURRENT" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\EdgeCoupons\coupons_data.db\CURRENT" SelfReg="false"/>
-    <ROW File="LOCK_16" Component_="log" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\EdgeCoupons\coupons_data.db\LOCK" SelfReg="false"/>
-    <ROW File="LOG_25" Component_="log" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\EdgeCoupons\coupons_data.db\LOG" SelfReg="false"/>
-    <ROW File="MANIFEST000001" Component_="log" FileName="MANIFE~1|MANIFEST-000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\EdgeCoupons\coupons_data.db\MANIFEST-000001" SelfReg="false"/>
-    <ROW File="log_26" Component_="log_8" FileName="000003.log" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension Scripts\000003.log" SelfReg="false"/>
-    <ROW File="CURRENT_8" Component_="log_8" FileName="CURRENT" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension Scripts\CURRENT" SelfReg="false"/>
-    <ROW File="LOCK_17" Component_="log_8" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension Scripts\LOCK" SelfReg="false"/>
-    <ROW File="LOG_27" Component_="log_8" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension Scripts\LOG" SelfReg="false"/>
-    <ROW File="MANIFEST000001_8" Component_="log_8" FileName="MANIFE~1|MANIFEST-000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension Scripts\MANIFEST-000001" SelfReg="false"/>
-    <ROW File="log_28" Component_="log_9" FileName="000003.log" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension State\000003.log" SelfReg="false"/>
-    <ROW File="CURRENT_9" Component_="log_9" FileName="CURRENT" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension State\CURRENT" SelfReg="false"/>
-    <ROW File="LOCK_18" Component_="log_9" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension State\LOCK" SelfReg="false"/>
-    <ROW File="LOG_29" Component_="log_9" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension State\LOG" SelfReg="false"/>
-    <ROW File="MANIFEST000001_9" Component_="log_9" FileName="MANIFE~1|MANIFEST-000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Extension State\MANIFEST-000001" SelfReg="false"/>
-    <ROW File="ExtensionActivityComp" Component_="ExtensionActivityComp" FileName="EXTENS~1|ExtensionActivityComp" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\ExtensionActivityComp" SelfReg="false"/>
-    <ROW File="ExtensionActivityCompjournal" Component_="ExtensionActivityComp" FileName="EXTENS~2|ExtensionActivityComp-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\ExtensionActivityComp-journal" SelfReg="false"/>
-    <ROW File="ExtensionActivityEdge" Component_="ExtensionActivityComp" FileName="EXTENS~3|ExtensionActivityEdge" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\ExtensionActivityEdge" SelfReg="false"/>
-    <ROW File="ExtensionActivityEdgejournal" Component_="ExtensionActivityComp" FileName="EXTENS~4|ExtensionActivityEdge-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\ExtensionActivityEdge-journal" SelfReg="false"/>
-    <ROW File="Favicons" Component_="ExtensionActivityComp" FileName="Favicons" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Favicons" SelfReg="false"/>
-    <ROW File="Faviconsjournal" Component_="ExtensionActivityComp" FileName="FAVICO~1|Favicons-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Favicons-journal" SelfReg="false"/>
-    <ROW File="LOCK_19" Component_="LOCK_7" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Feature Engagement Tracker\AvailabilityDB\LOCK" SelfReg="false"/>
-    <ROW File="LOG_30" Component_="LOCK_7" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Feature Engagement Tracker\AvailabilityDB\LOG" SelfReg="false"/>
-    <ROW File="LOCK_20" Component_="LOCK_8" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Feature Engagement Tracker\EventDB\LOCK" SelfReg="false"/>
-    <ROW File="LOG_31" Component_="LOCK_8" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Feature Engagement Tracker\EventDB\LOG" SelfReg="false"/>
-    <ROW File="data_0_4" Component_="data_0_4" FileName="data_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\GPUCache\data_0" SelfReg="false"/>
-    <ROW File="data_1_4" Component_="data_0_4" FileName="data_1" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\GPUCache\data_1" SelfReg="false"/>
-    <ROW File="data_2_4" Component_="data_0_4" FileName="data_2" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\GPUCache\data_2" SelfReg="false"/>
-    <ROW File="data_3_4" Component_="data_0_4" FileName="data_3" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\GPUCache\data_3" SelfReg="false"/>
-    <ROW File="index_9" Component_="data_0_4" FileName="index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\GPUCache\index" SelfReg="false"/>
-    <ROW File="heavy_ad_intervention_opt_out.db" Component_="ExtensionActivityComp" FileName="HEAVY_~1.DB|heavy_ad_intervention_opt_out.db" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\heavy_ad_intervention_opt_out.db" SelfReg="false"/>
-    <ROW File="heavy_ad_intervention_opt_out.dbjournal" Component_="ExtensionActivityComp" FileName="HEAVY_~1.DB-|heavy_ad_intervention_opt_out.db-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\heavy_ad_intervention_opt_out.db-journal" SelfReg="false"/>
-    <ROW File="History" Component_="ExtensionActivityComp" FileName="History" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\History" SelfReg="false"/>
-    <ROW File="Historyjournal" Component_="ExtensionActivityComp" FileName="HISTOR~1|History-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\History-journal" SelfReg="false"/>
-    <ROW File="log_32" Component_="log_10" FileName="000003.log" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Local Storage\leveldb\000003.log" SelfReg="false"/>
-    <ROW File="CURRENT_10" Component_="log_10" FileName="CURRENT" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Local Storage\leveldb\CURRENT" SelfReg="false"/>
-    <ROW File="LOCK_21" Component_="log_10" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Local Storage\leveldb\LOCK" SelfReg="false"/>
-    <ROW File="LOG_33" Component_="log_10" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Local Storage\leveldb\LOG" SelfReg="false"/>
-    <ROW File="MANIFEST000001_10" Component_="log_10" FileName="MANIFE~1|MANIFEST-000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Local Storage\leveldb\MANIFEST-000001" SelfReg="false"/>
-    <ROW File="LOCK_22" Component_="ExtensionActivityComp" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\LOCK" SelfReg="false"/>
-    <ROW File="LOG_34" Component_="ExtensionActivityComp" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\LOG" SelfReg="false"/>
-    <ROW File="LoginData" Component_="ExtensionActivityComp" FileName="LOGIND~1|Login Data" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Login Data" SelfReg="false"/>
-    <ROW File="LoginDatajournal" Component_="ExtensionActivityComp" FileName="LOGIND~2|Login Data-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Login Data-journal" SelfReg="false"/>
-    <ROW File="Cookies" Component_="Cookies" FileName="Cookies" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Network\Cookies" SelfReg="false"/>
-    <ROW File="Cookiesjournal" Component_="Cookies" FileName="COOKIE~1|Cookies-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Network\Cookies-journal" SelfReg="false"/>
-    <ROW File="NetworkPersistentState" Component_="Cookies" FileName="NETWOR~1|Network Persistent State" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Network\Network Persistent State" SelfReg="false"/>
-    <ROW File="NetworkDataMigrated" Component_="Cookies" FileName="NETWOR~2|NetworkDataMigrated" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Network\NetworkDataMigrated" SelfReg="false"/>
-    <ROW File="ReportingandNEL" Component_="Cookies" FileName="REPORT~1|Reporting and NEL" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Network\Reporting and NEL" SelfReg="false"/>
-    <ROW File="ReportingandNELjournal" Component_="Cookies" FileName="REPORT~2|Reporting and NEL-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Network\Reporting and NEL-journal" SelfReg="false"/>
-    <ROW File="TransportSecurity" Component_="Cookies" FileName="TRANSP~1|TransportSecurity" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Network\TransportSecurity" SelfReg="false"/>
-    <ROW File="NetworkActionPredictor" Component_="ExtensionActivityComp" FileName="NETWOR~1|Network Action Predictor" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Network Action Predictor" SelfReg="false"/>
-    <ROW File="NetworkActionPredictorjournal" Component_="ExtensionActivityComp" FileName="NETWOR~2|Network Action Predictor-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Network Action Predictor-journal" SelfReg="false"/>
-    <ROW File="LOCK_23" Component_="LOCK_9" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\optimization_guide_hint_cache_store\LOCK" SelfReg="false"/>
-    <ROW File="LOG_35" Component_="LOCK_9" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\optimization_guide_hint_cache_store\LOG" SelfReg="false"/>
-    <ROW File="LOCK_24" Component_="LOCK_10" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\optimization_guide_model_and_features_store\LOCK" SelfReg="false"/>
-    <ROW File="LOG_36" Component_="LOCK_10" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\optimization_guide_model_and_features_store\LOG" SelfReg="false"/>
-    <ROW File="Preferences" Component_="ExtensionActivityComp" FileName="PREFER~1|Preferences" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Preferences" SelfReg="false"/>
-    <ROW File="QuotaManager" Component_="ExtensionActivityComp" FileName="QUOTAM~1|QuotaManager" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\QuotaManager" SelfReg="false"/>
-    <ROW File="QuotaManagerjournal" Component_="ExtensionActivityComp" FileName="QUOTAM~2|QuotaManager-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\QuotaManager-journal" SelfReg="false"/>
-    <ROW File="README" Component_="ExtensionActivityComp" FileName="README" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\README" SelfReg="false"/>
-    <ROW File="NetworkDataMigrated_2" Component_="NetworkDataMigrated" FileName="NETWOR~1|NetworkDataMigrated" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Safe Browsing Network\NetworkDataMigrated" SelfReg="false"/>
-    <ROW File="SafeBrowsingCookies" Component_="NetworkDataMigrated" FileName="SAFEBR~1|Safe Browsing Cookies" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Safe Browsing Network\Safe Browsing Cookies" SelfReg="false"/>
-    <ROW File="SafeBrowsingCookiesjournal" Component_="NetworkDataMigrated" FileName="SAFEBR~2|Safe Browsing Cookies-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Safe Browsing Network\Safe Browsing Cookies-journal" SelfReg="false"/>
-    <ROW File="SecurePreferences" Component_="ExtensionActivityComp" FileName="SECURE~1|Secure Preferences" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Secure Preferences" SelfReg="false"/>
-    <ROW File="index_10" Component_="index_2" FileName="index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Service Worker\CacheStorage\06e0c1037b627040b1fca982cf0cb9ee2a0a713e\762bf180-e98f-472e-a9fe-cecfde0154a9\index" SelfReg="false"/>
-    <ROW File="therealindex_4" Component_="therealindex_4" FileName="THE-RE~1|the-real-index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Service Worker\CacheStorage\06e0c1037b627040b1fca982cf0cb9ee2a0a713e\762bf180-e98f-472e-a9fe-cecfde0154a9\index-dir\the-real-index" SelfReg="false"/>
-    <ROW File="index.txt" Component_="index.txt" FileName="index.txt" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Service Worker\CacheStorage\06e0c1037b627040b1fca982cf0cb9ee2a0a713e\index.txt" SelfReg="false"/>
-    <ROW File="log_37" Component_="log_11" FileName="000003.log" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Session Storage\000003.log" SelfReg="false"/>
-    <ROW File="CURRENT_11" Component_="log_11" FileName="CURRENT" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Session Storage\CURRENT" SelfReg="false"/>
-    <ROW File="LOCK_25" Component_="log_11" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Session Storage\LOCK" SelfReg="false"/>
-    <ROW File="LOG_38" Component_="log_11" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Session Storage\LOG" SelfReg="false"/>
-    <ROW File="MANIFEST000001_11" Component_="log_11" FileName="MANIFE~1|MANIFEST-000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Session Storage\MANIFEST-000001" SelfReg="false"/>
-    <ROW File="log_39" Component_="log_12" FileName="000003.log" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\000003.log" SelfReg="false"/>
-    <ROW File="CURRENT_12" Component_="log_12" FileName="CURRENT" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\CURRENT" SelfReg="false"/>
-    <ROW File="LOCK_26" Component_="log_12" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\LOCK" SelfReg="false"/>
-    <ROW File="LOG_40" Component_="log_12" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\LOG" SelfReg="false"/>
-    <ROW File="MANIFEST000001_12" Component_="log_12" FileName="MANIFE~1|MANIFEST-000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\MANIFEST-000001" SelfReg="false"/>
-    <ROW File="log_41" Component_="log_13" FileName="000003.log" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\000003.log" SelfReg="false"/>
-    <ROW File="CURRENT_13" Component_="log_13" FileName="CURRENT" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\CURRENT" SelfReg="false"/>
-    <ROW File="LOCK_27" Component_="log_13" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\LOCK" SelfReg="false"/>
-    <ROW File="LOG_42" Component_="log_13" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\LOG" SelfReg="false"/>
-    <ROW File="MANIFEST000001_13" Component_="log_13" FileName="MANIFE~1|MANIFEST-000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\MANIFEST-000001" SelfReg="false"/>
-    <ROW File="log_43" Component_="log_14" FileName="000003.log" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Site Characteristics Database\000003.log" SelfReg="false"/>
-    <ROW File="CURRENT_14" Component_="log_14" FileName="CURRENT" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Site Characteristics Database\CURRENT" SelfReg="false"/>
-    <ROW File="LOCK_28" Component_="log_14" FileName="LOCK" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Site Characteristics Database\LOCK" SelfReg="false"/>
-    <ROW File="LOG_44" Component_="log_14" FileName="LOG" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Site Characteristics Database\LOG" SelfReg="false"/>
-    <ROW File="MANIFEST000001_14" Component_="log_14" FileName="MANIFE~1|MANIFEST-000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Site Characteristics Database\MANIFEST-000001" SelfReg="false"/>
-    <ROW File="TopSites" Component_="ExtensionActivityComp" FileName="TOPSIT~1|Top Sites" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Top Sites" SelfReg="false"/>
-    <ROW File="TopSitesjournal" Component_="ExtensionActivityComp" FileName="TOPSIT~2|Top Sites-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Top Sites-journal" SelfReg="false"/>
-    <ROW File="VisitedLinks" Component_="ExtensionActivityComp" FileName="VISITE~1|Visited Links" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Visited Links" SelfReg="false"/>
-    <ROW File="WebData" Component_="ExtensionActivityComp" FileName="WEBDAT~1|Web Data" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Web Data" SelfReg="false"/>
-    <ROW File="WebDatajournal" Component_="ExtensionActivityComp" FileName="WEBDAT~2|Web Data-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Web Data-journal" SelfReg="false"/>
-    <ROW File="WebAssistDatabase" Component_="ExtensionActivityComp" FileName="WEBASS~1|WebAssistDatabase" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\WebAssistDatabase" SelfReg="false"/>
-    <ROW File="WebAssistDatabasejournal" Component_="ExtensionActivityComp" FileName="WEBASS~2|WebAssistDatabase-journal" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\WebAssistDatabase-journal" SelfReg="false"/>
-    <ROW File="data_0_5" Component_="data_0_5" FileName="data_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\GrShaderCache\GPUCache\data_0" SelfReg="false"/>
-    <ROW File="data_1_5" Component_="data_0_5" FileName="data_1" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\GrShaderCache\GPUCache\data_1" SelfReg="false"/>
-    <ROW File="data_2_5" Component_="data_0_5" FileName="data_2" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\GrShaderCache\GPUCache\data_2" SelfReg="false"/>
-    <ROW File="data_3_5" Component_="data_0_5" FileName="data_3" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\GrShaderCache\GPUCache\data_3" SelfReg="false"/>
-    <ROW File="f_000001_2" Component_="data_0_5" FileName="f_000001" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\GrShaderCache\GPUCache\f_000001" SelfReg="false"/>
-    <ROW File="f_000002_2" Component_="data_0_5" FileName="f_000002" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\GrShaderCache\GPUCache\f_000002" SelfReg="false"/>
-    <ROW File="f_000003_2" Component_="data_0_5" FileName="f_000003" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\GrShaderCache\GPUCache\f_000003" SelfReg="false"/>
-    <ROW File="f_000004_2" Component_="data_0_5" FileName="f_000004" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\GrShaderCache\GPUCache\f_000004" SelfReg="false"/>
-    <ROW File="index_11" Component_="data_0_5" FileName="index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\GrShaderCache\GPUCache\index" SelfReg="false"/>
-    <ROW File="LastVersion" Component_="LastVersion" FileName="LASTVE~1|Last Version" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Last Version" SelfReg="false"/>
-    <ROW File="LocalState" Component_="LastVersion" FileName="LOCALS~1|Local State" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\Local State" SelfReg="false"/>
-    <ROW File="persisted_first_party_sets.json" Component_="LastVersion" FileName="PERSIS~1.JSO|persisted_first_party_sets.json" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\persisted_first_party_sets.json" SelfReg="false"/>
-    <ROW File="data_0_6" Component_="data_0_6" FileName="data_0" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\ShaderCache\GPUCache\data_0" SelfReg="false"/>
-    <ROW File="data_1_6" Component_="data_0_6" FileName="data_1" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\ShaderCache\GPUCache\data_1" SelfReg="false"/>
-    <ROW File="data_2_6" Component_="data_0_6" FileName="data_2" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\ShaderCache\GPUCache\data_2" SelfReg="false"/>
-    <ROW File="data_3_6" Component_="data_0_6" FileName="data_3" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\ShaderCache\GPUCache\data_3" SelfReg="false"/>
-    <ROW File="index_12" Component_="data_0_6" FileName="index" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\ShaderCache\GPUCache\index" SelfReg="false"/>
-    <ROW File="cache" Component_="cache" FileName="cache" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\local\cache" SelfReg="false"/>
-    <ROW File="download_cache" Component_="cache" FileName="DOWNLO~1|download_cache" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\local\download_cache" SelfReg="false"/>
-    <ROW File="warnStateCache" Component_="cache" FileName="WARNST~1|warnStateCache" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\local\warnStateCache" SelfReg="false"/>
-    <ROW File="edgeSettings" Component_="edgeSettings" FileName="EDGESE~1|edgeSettings" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\remote\edgeSettings" SelfReg="false"/>
-    <ROW File="edgeSettings_2.02f9188b68640dbf72295f9083a21d674a314721ef06f82db281cb" Component_="edgeSettings" FileName="EDGESE~1.0-2|edgeSettings_2.0-2f9188b68640dbf72295f9083a21d674a314721ef06f82db281cbcb052ff8ec1" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\remote\edgeSettings_2.0-2f9188b68640dbf72295f9083a21d674a314721ef06f82db281cbcb052ff8ec1" SelfReg="false"/>
-    <ROW File="synchronousLookupUris" Component_="edgeSettings" FileName="SYNCHR~1|synchronousLookupUris" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\remote\synchronousLookupUris" SelfReg="false"/>
-    <ROW File="synchronousLookupUris_637906074367508921" Component_="edgeSettings" FileName="SYNCHR~2|synchronousLookupUris_637906074367508921" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\remote\synchronousLookupUris_637906074367508921" SelfReg="false"/>
-    <ROW File="topTraffic" Component_="edgeSettings" FileName="TOPTRA~1|topTraffic" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\remote\topTraffic" SelfReg="false"/>
-    <ROW File="topTraffic_637811103879324684" Component_="edgeSettings" FileName="TOPTRA~2|topTraffic_637811103879324684" Attributes="0" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\remote\topTraffic_637811103879324684" SelfReg="false"/>
+    <ROW File="ClickUp.exe" Component_="ClickUp.exe" FileName="ClickUp.exe" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ClickUp.exe.config" Component_="ClickUp.exe.config" FileName="CLICKU~1.CON|ClickUp.exe.config" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.config" SelfReg="false"/>
+    <ROW File="ClickUp.xml" Component_="ClickUp.exe.config" FileName="ClickUp.xml" Attributes="0" SourcePath="..\bin\Release\ClickUp.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Core.dll" Component_="Microsoft.Web.WebView2.Core.dll" FileName="MICROS~1.DLL|Microsoft.Web.WebView2.Core.dll" Attributes="0" SourcePath="..\bin\Release\Microsoft.Web.WebView2.Core.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Core.xml" Component_="ClickUp.exe.config" FileName="MICROS~1.XML|Microsoft.Web.WebView2.Core.xml" Attributes="0" SourcePath="..\bin\Release\Microsoft.Web.WebView2.Core.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.WinForms.dll" Component_="Microsoft.Web.WebView2.WinForms.dll" FileName="MICROS~2.DLL|Microsoft.Web.WebView2.WinForms.dll" Attributes="0" SourcePath="..\bin\Release\Microsoft.Web.WebView2.WinForms.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.WinForms.xml" Component_="ClickUp.exe.config" FileName="MICROS~2.XML|Microsoft.Web.WebView2.WinForms.xml" Attributes="0" SourcePath="..\bin\Release\Microsoft.Web.WebView2.WinForms.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Wpf.dll" Component_="Microsoft.Web.WebView2.Wpf.dll" FileName="MICROS~3.DLL|Microsoft.Web.WebView2.Wpf.dll" Attributes="0" SourcePath="..\bin\Release\Microsoft.Web.WebView2.Wpf.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Wpf.xml" Component_="ClickUp.exe.config" FileName="MICROS~3.XML|Microsoft.Web.WebView2.Wpf.xml" Attributes="0" SourcePath="..\bin\Release\Microsoft.Web.WebView2.Wpf.xml" SelfReg="false"/>
+    <ROW File="WebView2Loader.dll" Component_="WebView2Loader.dll" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Attributes="0" SourcePath="..\bin\Release\runtimes\win-arm64\native\WebView2Loader.dll" SelfReg="false"/>
+    <ROW File="WebView2Loader.dll_1" Component_="WebView2Loader.dll_1" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Attributes="0" SourcePath="..\bin\Release\runtimes\win-x64\native\WebView2Loader.dll" SelfReg="false"/>
+    <ROW File="WebView2Loader.dll_2" Component_="WebView2Loader.dll_2" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Attributes="0" SourcePath="..\bin\Release\runtimes\win-x86\native\WebView2Loader.dll" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" GeneralOptions="b" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -399,14 +90,14 @@
     <ROW Action="AI_DetectSoftware" Sequence="151"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Setup Files" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="4" PackageType="1" FilesInsideExe="true" ExeIconPath="V:\Projects\ClickUp\bin\Release\ClickUp.exe" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" MsiPackageType="x64"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Setup Files" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="4" PackageType="1" FilesInsideExe="true" ExeIconPath="..\bin\Release\ClickUp.exe" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" MsiPackageType="x64"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
     <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
     <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
-    <ROW TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" SignOptions="7" SignTool="0" UseSha256="1" Thumbprint="e3ea55773d51f10b942e1f6bc18c50217b736db3 Subject: Asher Solutions Inc&#10;Issuer: DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1&#10;Valid from 03/31/2022 to 04/01/2023&#10;User\MY" Subject="CN=Asher Solutions Inc, O=Asher Solutions Inc, L=Muskogee, S=Oklahoma, C=US, SERIALNUMBER=1913029601, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Oklahoma, OID.1.3.6.1.4.1.311.60.2.1.3=US"/>
+    <ROW TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" SignOptions="7" SignTool="0" UseSha256="1" Thumbprint="f65985f2e20b1f03343f69b515516136caee779d Subject: Asher Solutions Inc&#10;Issuer: DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1&#10;Valid from 03/16/2023 to 03/16/2024&#10;User\MY" Subject="CN=Asher Solutions Inc, O=Asher Solutions Inc, L=Muskogee, S=Oklahoma, C=US"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
     <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
@@ -473,20 +164,6 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
     <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
     <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
-    <ROW Directory_="AutoLaunchProtocolsComponent_Dir" Component_="AutoLaunchProtocolsComponent" ManualDelete="false"/>
-    <ROW Directory_="CertificateRevocation_Dir" Component_="CertificateRevocation" ManualDelete="false"/>
-    <ROW Directory_="attachments_Dir" Component_="attachments" ManualDelete="false"/>
-    <ROW Directory_="reports_Dir" Component_="reports" ManualDelete="false"/>
-    <ROW Directory_="c9217c22048858499216272763396_Dir" Component_="c9217c22048858499216272763396" ManualDelete="false"/>
-    <ROW Directory_="Sessions_Dir" Component_="Sessions" ManualDelete="false"/>
-    <ROW Directory_="hyphendata_Dir" Component_="hyphendata" ManualDelete="false"/>
-    <ROW Directory_="OptimizationGuidePredictionMode_Dir" Component_="OptimizationGuidePredictionModels" ManualDelete="false"/>
-    <ROW Directory_="OriginTrials_Dir" Component_="OriginTrials" ManualDelete="false"/>
-    <ROW Directory_="SpeechRecognition_Dir" Component_="SpeechRecognition" ManualDelete="false"/>
-    <ROW Directory_="UnindexedRules_Dir" Component_="UnindexedRules" ManualDelete="false"/>
-    <ROW Directory_="TrustProtectionLists_Dir" Component_="TrustProtectionLists" ManualDelete="false"/>
-    <ROW Directory_="WidevineCdm_Dir" Component_="WidevineCdm" ManualDelete="false"/>
-    <ROW Directory_="ZxcvbnData_Dir" Component_="ZxcvbnData" ManualDelete="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
@@ -507,6 +184,7 @@
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
     <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#ClickUp.exe]"/>
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
     <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
     <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
@@ -521,32 +199,6 @@
     <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
     <ROW Feature_="MainFeature" Component_="ClickUp.exe"/>
     <ROW Feature_="MainFeature" Component_="ClickUp.exe.config"/>
-    <ROW Feature_="MainFeature" Component_="AutoLaunchProtocolsComponent"/>
-    <ROW Feature_="MainFeature" Component_="CertificateRevocation"/>
-    <ROW Feature_="MainFeature" Component_="attachments"/>
-    <ROW Feature_="MainFeature" Component_="metadata"/>
-    <ROW Feature_="MainFeature" Component_="reports"/>
-    <ROW Feature_="MainFeature" Component_="LOCK"/>
-    <ROW Feature_="MainFeature" Component_="c9217c22048858499216272763396"/>
-    <ROW Feature_="MainFeature" Component_="LOCK_6"/>
-    <ROW Feature_="MainFeature" Component_="data_0"/>
-    <ROW Feature_="MainFeature" Component_="ce64_0"/>
-    <ROW Feature_="MainFeature" Component_="therealindex"/>
-    <ROW Feature_="MainFeature" Component_="index"/>
-    <ROW Feature_="MainFeature" Component_="therealindex_3"/>
-    <ROW Feature_="MainFeature" Component_="Databases.db"/>
-    <ROW Feature_="MainFeature" Component_="log"/>
-    <ROW Feature_="MainFeature" Component_="log_8"/>
-    <ROW Feature_="MainFeature" Component_="log_9"/>
-    <ROW Feature_="MainFeature" Component_="ExtensionActivityComp"/>
-    <ROW Feature_="MainFeature" Component_="LOCK_7"/>
-    <ROW Feature_="MainFeature" Component_="LOCK_8"/>
-    <ROW Feature_="MainFeature" Component_="data_0_4"/>
-    <ROW Feature_="MainFeature" Component_="log_10"/>
-    <ROW Feature_="MainFeature" Component_="Cookies"/>
-    <ROW Feature_="MainFeature" Component_="LOCK_9"/>
-    <ROW Feature_="MainFeature" Component_="LOCK_10"/>
-    <ROW Feature_="MainFeature" Component_="NetworkDataMigrated"/>
     <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.Core.dll"/>
     <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.WinForms.dll"/>
     <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.Wpf.dll"/>
@@ -554,30 +206,9 @@
     <ROW Feature_="MainFeature" Component_="WebView2Loader.dll_1"/>
     <ROW Feature_="MainFeature" Component_="WebView2Loader.dll_2"/>
     <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
-    <ROW Feature_="MainFeature" Component_="index_2"/>
-    <ROW Feature_="MainFeature" Component_="therealindex_4"/>
-    <ROW Feature_="MainFeature" Component_="index.txt"/>
-    <ROW Feature_="MainFeature" Component_="log_11"/>
-    <ROW Feature_="MainFeature" Component_="Sessions"/>
-    <ROW Feature_="MainFeature" Component_="log_12"/>
-    <ROW Feature_="MainFeature" Component_="log_13"/>
-    <ROW Feature_="MainFeature" Component_="log_14"/>
-    <ROW Feature_="MainFeature" Component_="data_0_5"/>
-    <ROW Feature_="MainFeature" Component_="hyphendata"/>
-    <ROW Feature_="MainFeature" Component_="LastVersion"/>
-    <ROW Feature_="MainFeature" Component_="OptimizationGuidePredictionModels"/>
-    <ROW Feature_="MainFeature" Component_="OriginTrials"/>
-    <ROW Feature_="MainFeature" Component_="data_0_6"/>
-    <ROW Feature_="MainFeature" Component_="cache"/>
-    <ROW Feature_="MainFeature" Component_="edgeSettings"/>
-    <ROW Feature_="MainFeature" Component_="SpeechRecognition"/>
-    <ROW Feature_="MainFeature" Component_="UnindexedRules"/>
-    <ROW Feature_="MainFeature" Component_="TrustProtectionLists"/>
-    <ROW Feature_="MainFeature" Component_="WidevineCdm"/>
-    <ROW Feature_="MainFeature" Component_="ZxcvbnData"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="ClickUp.exe" SourcePath="V:\Projects\ClickUp\bin\Release\ClickUp.exe" Index="0"/>
+    <ROW Name="ClickUp.exe" SourcePath="..\bin\Release\ClickUp.exe" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
@@ -607,6 +238,7 @@
     <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="103"/>
     <ROW Action="AI_AppSearchEx" Sequence="102"/>
     <ROW Action="AI_DetectSoftware" Sequence="101"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
     <ROW Condition="( Version9X OR VersionNT64 )" Description="[ProductName] cannot be installed on [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT" IsPredefined="true" Builds="DefaultBuild"/>
@@ -647,15 +279,15 @@
     <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
-    <ROW PrereqKey="AF4EF7137AE24E488A4E128FD1B89507" DisplayName="Microsoft Edge WebView2 Runtime (web installer)" VersionMin="96.0" SetupFileUrl="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/de41d780-c562-4b27-813a-a7cb236e791e/MicrosoftEdgeWebview2Setup.exe" Location="1" ExactSize="1781528" WinNTVersions="Windows Vista x86" WinNT64Versions="Windows Vista x64" Operator="1" ComLine="/silent /install" BasicUiComLine="/silent /install" NoUiComLine="/silent /install" Options="ym" MD5="b97ff6d43d00ae1df8b45f13c3348c0e" TargetName="WebView2"/>
-    <ROW PrereqKey="BF9259651485FB4F316A40CB01E7B" DisplayName=".NET Framework 4.8 (web installer)" SetupFileUrl="https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/1f81f3962f75eff5d83a60abd3a3ec7b/ndp48-web.exe" Location="1" ExactSize="1479400" WinNTVersions="Windows Vista x86" WinNT64Versions="Windows Vista x64" Operator="1" ComLine="/q /norestart" BasicUiComLine="/q /norestart" NoUiComLine="/q /norestart" Options="xym" MD5="40604baf5a025f4b23cbe463239b68cb" TargetName=".NET Framework 4.8"/>
-    <ATTRIBUTE name="PrereqsOrder" value="BF9259651485FB4F316A40CB01E7B AF4EF7137AE24E488A4E128FD1B89507"/>
+    <ROW PrereqKey="AF4EF7137AE24E488A4E128FD1B89507" DisplayName="Microsoft Edge WebView2 Runtime (web installer)" VersionMin="96.0" SetupFileUrl="https://go.microsoft.com/fwlink/p/?LinkId=2124703" Location="1" ExactSize="0" WinNTVersions="Windows Vista x86, Windows Server 2008 x86, Windows 8 x86" WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 8 x64" Operator="1" ComLine="/silent /install" BasicUiComLine="/silent /install" NoUiComLine="/silent /install" Options="y" TargetName="WebView2"/>
+    <ROW PrereqKey="BF9259651485FB4F316A40CB01E7B" DisplayName=".NET Framework 4.8 (web installer)" SetupFileUrl="https://go.microsoft.com/fwlink/?LinkId=2085155" Location="1" ExactSize="0" WinNTVersions="Windows Vista x86, Windows Server 2008 x86, Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86, Windows 10 version 2004 x86, Windows 10 version 20H2 x86, Windows 10 version 21H1 x86, Windows 10 version 21H2 x86" WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 7 RTM x64, Windows Server 2008 R2 RTM x64, Windows 8 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64, Windows Server 2022 x64, Windows 11 x64" Operator="1" ComLine="/q /norestart" BasicUiComLine="/q /norestart" NoUiComLine="/q /norestart" Options="xy" TargetName=".NET Framework 4.8"/>
+    <ATTRIBUTE name="PrereqsOrder" value="AF4EF7137AE24E488A4E128FD1B89507 BF9259651485FB4F316A40CB01E7B"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
-    <ROW SearchKey="AF4EF7137AE24E488A4E128FD1B89507pv" Prereq="AF4EF7137AE24E488A4E128FD1B89507" SearchType="2" SearchString="HKLM\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}\pv" VerMin="96.0.1054.43" Order="1" Property="PreReqSearch_AF4EF7137AE24E488A4E12"/>
+    <ROW SearchKey="AF4EF7137AE24E488A4E128FD1B89507pv" Prereq="AF4EF7137AE24E488A4E128FD1B89507" SearchType="2" SearchString="HKCU\Software\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}\pv" VerMin="107.0.1418.42" Order="1" Property="PreReqSearch_AF4EF7137AE24E488A4E12"/>
     <ROW SearchKey="BF9259651485FB4F316A40CB01E7BReleas" Prereq="BF9259651485FB4F316A40CB01E7B" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Release" RefContent="G528048" Order="1" Property="PreReqSearch_BF9259651485FB4F316A40"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
-    <ROW Directory_="APPDIR" SourcePath="V:\Projects\ClickUp\bin\Release" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="APPDIR" SourcePath="..\bin\Release" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
   </COMPONENT>
 </DOCUMENT>

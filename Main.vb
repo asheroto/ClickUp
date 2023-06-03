@@ -31,7 +31,6 @@ Public Class Main
 
     Private Sub CoreWebView2_NewWindowRequested(sender As Object, e As CoreWebView2NewWindowRequestedEventArgs)
         e.Handled = True
-
         Try
             Dim p As New Process
             p.StartInfo.UseShellExecute = True
@@ -86,7 +85,14 @@ Public Class Main
         Opacity = 100
     End Sub
 
-    Private Sub WV_Click(sender As Object, e As EventArgs) Handles WV.Click
+    Private Sub RestartToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RestartToolStripMenuItem.Click
+        Dim p As New Process
+        p.StartInfo.FileName = "cmd"
+        p.StartInfo.Arguments = $"/C timeout /t 3 && start """" ""{Application.ExecutablePath}"""
+        p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden
+        p.Start()
+
+        Application.Exit()
     End Sub
 End Class
 
@@ -114,7 +120,6 @@ Public Class Hotkey
     'This enum is just to make it easier to call the registerHotKey function: The modifier integer codes are replaced by a friendly "Alt","Shift" etc.
 
 #End Region
-
 
 #Region "Hotkey registration, unregistration and handling"
 
