@@ -11,17 +11,19 @@
     <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_INTERNET_CONNECTION"/>
     <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPHELPLINK" Value="https://github.com/asheroto/ClickUp"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPPRODUCTICON" Value="ClickUp.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/asheroto/ClickUp"/>
     <ROW Property="AiPreferFastOem" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
-    <ROW Property="Manufacturer" Value="Google"/>
-    <ROW Property="ProductCode" Value="1033:{7B698ACF-CA26-4699-BB35-F072D69479F6} " Type="16"/>
+    <ROW Property="Manufacturer" Value="asheroto"/>
+    <ROW Property="ProductCode" Value="1033:{1059A26D-7E0E-41A1-B94C-FBC134CBD7CA} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="ClickUp"/>
-    <ROW Property="ProductVersion" Value="1.1.1.0"/>
+    <ROW Property="ProductVersion" Value="1.1.2.0"/>
     <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:ReallySuppress"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
@@ -93,11 +95,11 @@
     <ROW Directory="attachments_Dir" Directory_Parent="Crashpad_Dir" DefaultDir="ATTACH~1|attachments"/>
     <ROW Directory="blob_storage_Dir" Directory_Parent="Default_Dir" DefaultDir="BLOB_S~1|blob_storage"/>
     <ROW Directory="c5acde3bf48a9bdc1335e2099b324_Dir" Directory_Parent="e0c1037b627040b1fca982cf0cb9ee2_Dir" DefaultDir="762C5A~1|762c5acd-e3bf-48a9-bdc1-335e2099b324"/>
-    <ROW Directory="ca616e472367475e812352f13e16427_Dir" Directory_Parent="blob_storage_Dir" DefaultDir="CA616E~1|ca616e47-2367-475e-8123-52f13e16427d"/>
     <ROW Directory="cad3f0a8954303932cbd62d0b5fd16_Dir" Directory_Parent="e0c1037b627040b1fca982cf0cb9ee2_Dir" DefaultDir="29CAD3~1|29cad3f0-a895-4303-932c-bd62d0b5fd16"/>
     <ROW Directory="cefefc5e91044c578b0c4484a32f4d5_Dir" Directory_Parent="e0c1037b627040b1fca982cf0cb9ee2_Dir" DefaultDir="CEFEFC~1|cefefc5e-9104-4c57-8b0c-4484a32f4d52"/>
     <ROW Directory="cf8e0ce034886a4e6f51a9100453e_Dir" Directory_Parent="e0c1037b627040b1fca982cf0cb9ee2_Dir" DefaultDir="295CF8~1|295cf8e0-ce03-4886-a4e6-f51a9100453e"/>
     <ROW Directory="commerce_subscription_db_Dir" Directory_Parent="Default_Dir" DefaultDir="COMMER~1|commerce_subscription_db"/>
+    <ROW Directory="d373fc6af1480fb0fda5742df51ff7_Dir" Directory_Parent="blob_storage_Dir" DefaultDir="79D373~1|79d373fc-6af1-480f-b0fd-a5742df51ff7"/>
     <ROW Directory="d9388cc4a4d5aa69e20bfc55f41f7_Dir" Directory_Parent="e0c1037b627040b1fca982cf0cb9ee2_Dir" DefaultDir="113D93~1|113d9388-cc4a-4d5a-a69e-20bfc55f41f7"/>
     <ROW Directory="databases_Dir" Directory_Parent="Default_Dir" DefaultDir="DATABA~1|databases"/>
     <ROW Directory="de6d9689434a38bb498e043894f42b_Dir" Directory_Parent="e0c1037b627040b1fca982cf0cb9ee2_Dir" DefaultDir="07DE6D~1|07de6d96-8943-4a38-bb49-8e043894f42b"/>
@@ -171,9 +173,9 @@
     <ROW Component="af5d4e3c91257_0" ComponentId="{E40490B1-116C-4F2C-AFA3-71515BDA5D9D}" Directory_="js_Dir" Attributes="0" KeyPath="af5d4e3c91257_0" Type="0"/>
     <ROW Component="attachments" ComponentId="{47D622BC-0FDA-479E-9CE0-3FFDC127E156}" Directory_="attachments_Dir" Attributes="0"/>
     <ROW Component="bc9fa852355_0" ComponentId="{CD8CC4E1-577A-47BF-85DB-6BC779ACA19E}" Directory_="de6d9689434a38bb498e043894f42b_Dir" Attributes="0" KeyPath="bc9fa852355_0" Type="0"/>
-    <ROW Component="ca616e472367475e812352f13e16427d" ComponentId="{AFD9D99A-B9D7-49D4-A0E4-06C0DF6C0E77}" Directory_="ca616e472367475e812352f13e16427_Dir" Attributes="0"/>
     <ROW Component="cc80dabc69f58b6_0" ComponentId="{57D5118B-89F2-4935-8688-0E5A57869537}" Directory_="ScriptCache_Dir" Attributes="0" KeyPath="cc80dabc69f58b6_0" Type="0"/>
     <ROW Component="customSettings" ComponentId="{4558A35E-E98A-4B52-802F-AB02A70C3A37}" Directory_="RemoteData_Dir" Attributes="0" KeyPath="customSettings" Type="0"/>
+    <ROW Component="d373fc6af1480fb0fda5742df51ff7" ComponentId="{29FF6250-3B85-4D07-B52C-E728C258E80A}" Directory_="d373fc6af1480fb0fda5742df51ff7_Dir" Attributes="0"/>
     <ROW Component="d4b94f0fd41_0" ComponentId="{17CC051B-F856-4C3C-BBB2-A91CCD0EF4FA}" Directory_="cad3f0a8954303932cbd62d0b5fd16_Dir" Attributes="0" KeyPath="d4b94f0fd41_0" Type="0"/>
     <ROW Component="d61a1a863eaa5d_0" ComponentId="{C92432D4-AB70-4B58-B54C-86597E9E44FD}" Directory_="cefefc5e91044c578b0c4484a32f4d5_Dir" Attributes="0" KeyPath="d61a1a863eaa5d_0" Type="0"/>
     <ROW Component="data_0" ComponentId="{C36C2EFB-6079-4A31-A154-CAD6BD839B5C}" Directory_="Cache_Data_Dir" Attributes="0" KeyPath="data_0" Type="0"/>
@@ -254,7 +256,6 @@
     <ROW File="f_000010" Component_="data_0" FileName="f_000010" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000010" SelfReg="false"/>
     <ROW File="f_000011" Component_="data_0" FileName="f_000011" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000011" SelfReg="false"/>
     <ROW File="f_000012" Component_="data_0" FileName="f_000012" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000012" SelfReg="false"/>
-    <ROW File="f_000013" Component_="data_0" FileName="f_000013" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000013" SelfReg="false"/>
     <ROW File="f_000014" Component_="data_0" FileName="f_000014" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000014" SelfReg="false"/>
     <ROW File="f_000015" Component_="data_0" FileName="f_000015" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000015" SelfReg="false"/>
     <ROW File="f_000016" Component_="data_0" FileName="f_000016" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000016" SelfReg="false"/>
@@ -1336,23 +1337,14 @@
     <ROW File="edgeSettings" Component_="customSettings" FileName="EDGESE~1|edgeSettings" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\RemoteData\edgeSettings" SelfReg="false"/>
     <ROW File="edgeSettings_2.048b11410dc937a1723bf4c5ad33ecdb286d8ec69544241bc373f7" Component_="customSettings" FileName="EDGESE~1.0-4|edgeSettings_2.0-48b11410dc937a1723bf4c5ad33ecdb286d8ec69544241bc373f753e64b396c1" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\RemoteData\edgeSettings_2.0-48b11410dc937a1723bf4c5ad33ecdb286d8ec69544241bc373f753e64b396c1" SelfReg="false"/>
     <ROW File="synchronousLookupUris" Component_="customSettings" FileName="SYNCHR~1|synchronousLookupUris" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\RemoteData\synchronousLookupUris" SelfReg="false"/>
-    <ROW File="synchronousLookupUris_638217653171163413" Component_="customSettings" FileName="SYNCHR~2|synchronousLookupUris_638217653171163413" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\RemoteData\synchronousLookupUris_638217653171163413" SelfReg="false"/>
     <ROW File="topTraffic" Component_="customSettings" FileName="TOPTRA~1|topTraffic" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\RemoteData\topTraffic" SelfReg="false"/>
     <ROW File="topTraffic_638004170464094982" Component_="customSettings" FileName="TOPTRA~2|topTraffic_638004170464094982" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\RemoteData\topTraffic_638004170464094982" SelfReg="false"/>
     <ROW File="Variations" Component_="LastVersion" FileName="VARIAT~1|Variations" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Variations" SelfReg="false"/>
-    <ROW File="f_0000c4" Component_="data_0" FileName="f_0000c4" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000c4" SelfReg="false"/>
-    <ROW File="f_0000c5" Component_="data_0" FileName="f_0000c5" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000c5" SelfReg="false"/>
-    <ROW File="f_0000c6" Component_="data_0" FileName="f_0000c6" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000c6" SelfReg="false"/>
-    <ROW File="f_0000c7" Component_="data_0" FileName="f_0000c7" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000c7" SelfReg="false"/>
     <ROW File="f_0000c8" Component_="data_0" FileName="f_0000c8" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000c8" SelfReg="false"/>
-    <ROW File="f_0000c9" Component_="data_0" FileName="f_0000c9" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000c9" SelfReg="false"/>
     <ROW File="f_0000ca" Component_="data_0" FileName="f_0000ca" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000ca" SelfReg="false"/>
-    <ROW File="f_0000cb" Component_="data_0" FileName="f_0000cb" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000cb" SelfReg="false"/>
     <ROW File="f_0000cc" Component_="data_0" FileName="f_0000cc" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000cc" SelfReg="false"/>
-    <ROW File="f_0000cd" Component_="data_0" FileName="f_0000cd" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000cd" SelfReg="false"/>
     <ROW File="f_0000ce" Component_="data_0" FileName="f_0000ce" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000ce" SelfReg="false"/>
     <ROW File="f_0000cf" Component_="data_0" FileName="f_0000cf" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000cf" SelfReg="false"/>
-    <ROW File="f_0000d0" Component_="data_0" FileName="f_0000d0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d0" SelfReg="false"/>
     <ROW File="f_0000d1" Component_="data_0" FileName="f_0000d1" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d1" SelfReg="false"/>
     <ROW File="f_0000d2" Component_="data_0" FileName="f_0000d2" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d2" SelfReg="false"/>
     <ROW File="e8d7d2d9ba7d4_0" Component_="af5d4e3c91257_0" FileName="100E8D~1|100e8d7d2d9ba7d4_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\100e8d7d2d9ba7d4_0" SelfReg="false"/>
@@ -1377,6 +1369,30 @@
     <ROW File="d8bad04b14ca1820_0" Component_="af5d4e3c91257_0" FileName="D8BAD0~1|d8bad04b14ca1820_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\d8bad04b14ca1820_0" SelfReg="false"/>
     <ROW File="ecba0530bad5195f_0" Component_="af5d4e3c91257_0" FileName="ECBA05~1|ecba0530bad5195f_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\ecba0530bad5195f_0" SelfReg="false"/>
     <ROW File="fede9d0ac9052887_0" Component_="af5d4e3c91257_0" FileName="FEDE9D~1|fede9d0ac9052887_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\fede9d0ac9052887_0" SelfReg="false"/>
+    <ROW File="f_0000d3" Component_="data_0" FileName="f_0000d3" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d3" SelfReg="false"/>
+    <ROW File="f_0000d4" Component_="data_0" FileName="f_0000d4" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d4" SelfReg="false"/>
+    <ROW File="f_0000d5" Component_="data_0" FileName="f_0000d5" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d5" SelfReg="false"/>
+    <ROW File="f_0000d6" Component_="data_0" FileName="f_0000d6" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d6" SelfReg="false"/>
+    <ROW File="f_0000d7" Component_="data_0" FileName="f_0000d7" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d7" SelfReg="false"/>
+    <ROW File="f_0000d8" Component_="data_0" FileName="f_0000d8" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d8" SelfReg="false"/>
+    <ROW File="f_0000d9" Component_="data_0" FileName="f_0000d9" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000d9" SelfReg="false"/>
+    <ROW File="f_0000da" Component_="data_0" FileName="f_0000da" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000da" SelfReg="false"/>
+    <ROW File="f_0000dc" Component_="data_0" FileName="f_0000dc" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000dc" SelfReg="false"/>
+    <ROW File="f_0000dd" Component_="data_0" FileName="f_0000dd" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_0000dd" SelfReg="false"/>
+    <ROW File="f6f21acc7c65f_0" Component_="af5d4e3c91257_0" FileName="059F6F~1|059f6f21acc7c65f_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\059f6f21acc7c65f_0" SelfReg="false"/>
+    <ROW File="f8223f658cc_0" Component_="af5d4e3c91257_0" FileName="14873F~1|14873f8223f658cc_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\14873f8223f658cc_0" SelfReg="false"/>
+    <ROW File="c05a88ec08_0" Component_="af5d4e3c91257_0" FileName="193105~1|193105c05a88ec08_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\193105c05a88ec08_0" SelfReg="false"/>
+    <ROW File="f3fca4027e3b2f3_0" Component_="af5d4e3c91257_0" FileName="3F3FCA~1|3f3fca4027e3b2f3_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\3f3fca4027e3b2f3_0" SelfReg="false"/>
+    <ROW File="ad717ad83aa7b13_0" Component_="af5d4e3c91257_0" FileName="6AD717~1|6ad717ad83aa7b13_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\6ad717ad83aa7b13_0" SelfReg="false"/>
+    <ROW File="fdf_0" Component_="af5d4e3c91257_0" FileName="786491~1|7864913044690fdf_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\7864913044690fdf_0" SelfReg="false"/>
+    <ROW File="e29013b03bab34_0" Component_="af5d4e3c91257_0" FileName="92E290~1|92e29013b03bab34_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\92e29013b03bab34_0" SelfReg="false"/>
+    <ROW File="f76b1d2d6_0" Component_="af5d4e3c91257_0" FileName="974194~1|9741946f76b1d2d6_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\9741946f76b1d2d6_0" SelfReg="false"/>
+    <ROW File="a7128a1eec2ac3bc_0" Component_="af5d4e3c91257_0" FileName="A7128A~1|a7128a1eec2ac3bc_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\a7128a1eec2ac3bc_0" SelfReg="false"/>
+    <ROW File="c028abf9060cb2b0_0" Component_="af5d4e3c91257_0" FileName="C028AB~1|c028abf9060cb2b0_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\c028abf9060cb2b0_0" SelfReg="false"/>
+    <ROW File="c2829b54881167c2_0" Component_="af5d4e3c91257_0" FileName="C2829B~1|c2829b54881167c2_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\c2829b54881167c2_0" SelfReg="false"/>
+    <ROW File="c964880ae1ef19f3_0" Component_="af5d4e3c91257_0" FileName="C96488~1|c964880ae1ef19f3_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\c964880ae1ef19f3_0" SelfReg="false"/>
+    <ROW File="ec2e3652cd416656_0" Component_="af5d4e3c91257_0" FileName="EC2E36~1|ec2e3652cd416656_0" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\Default\Code Cache\js\ec2e3652cd416656_0" SelfReg="false"/>
+    <ROW File="synchronousLookupUris_638217688785401737" Component_="customSettings" FileName="SYNCHR~3|synchronousLookupUris_638217688785401737" Attributes="0" SourcePath="..\bin\Release\ClickUp.exe.WebView2\EBWebView\SmartScreen\RemoteData\synchronousLookupUris_638217688785401737" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" GeneralOptions="b" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -1473,7 +1489,7 @@
     <ROW Directory_="TrustProtectionLists_Dir" Component_="TrustProtectionLists" ManualDelete="false"/>
     <ROW Directory_="WidevineCdm_Dir" Component_="WidevineCdm" ManualDelete="false"/>
     <ROW Directory_="ZxcvbnData_Dir" Component_="ZxcvbnData" ManualDelete="false"/>
-    <ROW Directory_="ca616e472367475e812352f13e16427_Dir" Component_="ca616e472367475e812352f13e16427d" ManualDelete="false"/>
+    <ROW Directory_="d373fc6af1480fb0fda5742df51ff7_Dir" Component_="d373fc6af1480fb0fda5742df51ff7" ManualDelete="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
@@ -1581,7 +1597,7 @@
     <ROW Feature_="MainFeature" Component_="TrustProtectionLists"/>
     <ROW Feature_="MainFeature" Component_="WidevineCdm"/>
     <ROW Feature_="MainFeature" Component_="ZxcvbnData"/>
-    <ROW Feature_="MainFeature" Component_="ca616e472367475e812352f13e16427d"/>
+    <ROW Feature_="MainFeature" Component_="d373fc6af1480fb0fda5742df51ff7"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="ClickUp.exe" SourcePath="..\bin\Release\ClickUp.exe" Index="0"/>

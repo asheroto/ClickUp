@@ -29,15 +29,16 @@ Partial Class Main
         Me.SystemTrayIcon = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ContextMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RestartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Startup = New System.Windows.Forms.Timer(Me.components)
-        Me.RestartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.WV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenu.SuspendLayout()
         Me.SuspendLayout()
         '
         'WV
         '
+        Me.WV.AllowExternalDrop = True
         Me.WV.CreationProperties = Nothing
         Me.WV.DefaultBackgroundColor = System.Drawing.Color.White
         Me.WV.Dock = System.Windows.Forms.DockStyle.Fill
@@ -63,29 +64,29 @@ Partial Class Main
         '
         Me.ContextMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem, Me.RestartToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.ContextMenu.Name = "ContextMenu"
-        Me.ContextMenu.Size = New System.Drawing.Size(181, 92)
+        Me.ContextMenu.Size = New System.Drawing.Size(111, 70)
         '
         'ShowToolStripMenuItem
         '
         Me.ShowToolStripMenuItem.Name = "ShowToolStripMenuItem"
-        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(110, 22)
         Me.ShowToolStripMenuItem.Text = "Show"
+        '
+        'RestartToolStripMenuItem
+        '
+        Me.RestartToolStripMenuItem.Name = "RestartToolStripMenuItem"
+        Me.RestartToolStripMenuItem.Size = New System.Drawing.Size(110, 22)
+        Me.RestartToolStripMenuItem.Text = "Restart"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(110, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'Startup
         '
         Me.Startup.Enabled = True
-        '
-        'RestartToolStripMenuItem
-        '
-        Me.RestartToolStripMenuItem.Name = "RestartToolStripMenuItem"
-        Me.RestartToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.RestartToolStripMenuItem.Text = "Restart"
         '
         'Main
         '
@@ -96,6 +97,7 @@ Partial Class Main
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "Main"
+        Me.Opacity = 0R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ClickUp"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
