@@ -23,10 +23,6 @@ Public Class Main
         Hotkey.registerHotkey(Me, "ESC", Hotkey.KeyModifier.Alt)
     End Sub
 
-    Private Sub Main_Deactivate(sender As Object, e As EventArgs) Handles Me.Deactivate
-        Me.WindowState = FormWindowState.Minimized
-    End Sub
-
     Private Sub WV_CoreWebView2InitializationCompleted(sender As Object,
                                                        e As CoreWebView2InitializationCompletedEventArgs) _
         Handles WV.CoreWebView2InitializationCompleted
