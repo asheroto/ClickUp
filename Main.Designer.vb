@@ -57,7 +57,7 @@ Partial Class Main
         '
         Me.SystemTrayIcon.ContextMenuStrip = Me.ContextMenu
         Me.SystemTrayIcon.Icon = CType(resources.GetObject("SystemTrayIcon.Icon"), System.Drawing.Icon)
-        Me.SystemTrayIcon.Text = "ClickUp"
+        Me.SystemTrayIcon.Text = "ClickUp (Press Alt+Esc to show)"
         Me.SystemTrayIcon.Visible = True
         '
         'ContextMenu
