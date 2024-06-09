@@ -11,10 +11,11 @@ Public Class Main
 
     Private Sub Timer_Title_Tick(sender As Object, e As EventArgs) Handles Timer_Title.Tick
         Try
-            If Text = WV.CoreWebView2.DocumentTitle Then Exit Sub
-            Text = WV.CoreWebView2.DocumentTitle
+            If Text <> WV.CoreWebView2.DocumentTitle Then
+                Text = WV.CoreWebView2.DocumentTitle
+            End If
         Catch ex As Exception
-
+            ' Handle exception (optional)
         End Try
     End Sub
 
@@ -23,14 +24,13 @@ Public Class Main
         Hotkey.registerHotkey(Me, "ESC", Hotkey.KeyModifier.Alt)
     End Sub
 
-    Private Sub WV_CoreWebView2InitializationCompleted(sender As Object,
-                                                       e As CoreWebView2InitializationCompletedEventArgs) _
-        Handles WV.CoreWebView2InitializationCompleted
+    Private Sub WV_CoreWebView2InitializationCompleted(sender As Object, e As CoreWebView2InitializationCompletedEventArgs) Handles WV.CoreWebView2InitializationCompleted
         AddHandler WV.CoreWebView2.NewWindowRequested, AddressOf CoreWebView2_NewWindowRequested
     End Sub
 
     Private Sub CoreWebView2_NewWindowRequested(sender As Object, e As CoreWebView2NewWindowRequestedEventArgs)
         e.Handled = True
+
         Try
             Dim p As New Process
             p.StartInfo.UseShellExecute = True
@@ -38,12 +38,11 @@ Public Class Main
             p.StartInfo.WindowStyle = ProcessWindowStyle.Normal
             p.Start()
         Catch ex As Exception
-
+            'Handle exception
         End Try
     End Sub
 
-    Private Sub SystemTrayIcon_MouseDoubleClick(sender As Object, e As MouseEventArgs) _
-        Handles SystemTrayIcon.MouseDoubleClick
+    Private Sub SystemTrayIcon_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles SystemTrayIcon.MouseDoubleClick
         DoShow()
     End Sub
 
@@ -85,13 +84,17 @@ Public Class Main
     End Sub
 
     Private Sub RestartToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RestartToolStripMenuItem.Click
-        Dim p As New Process
-        p.StartInfo.FileName = "cmd"
-        p.StartInfo.Arguments = $"/C timeout /t 3 && start """" ""{Application.ExecutablePath}"""
-        p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden
-        p.Start()
+        Try
+            Dim p As New Process
+            p.StartInfo.FileName = "cmd"
+            p.StartInfo.Arguments = $"/C timeout /t 3 && start """" ""{Application.ExecutablePath}"""
+            p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden
+            p.Start()
 
-        Application.Exit()
+            Application.Exit()
+        Catch ex As Exception
+            'Handle exception
+        End Try
     End Sub
     Public Shared Sub DoShow()
         If Main.WindowState = FormWindowState.Minimized Then
