@@ -20,7 +20,7 @@ Public Class Main
     End Sub
 
     Private Sub Main_Invalidated(sender As Object, e As InvalidateEventArgs) Handles Me.Invalidated
-        'Register hotkey
+        ' Register hotkey
         Hotkey.registerHotkey(Me, "ESC", Hotkey.KeyModifier.Alt)
     End Sub
 
@@ -30,7 +30,6 @@ Public Class Main
 
     Private Sub CoreWebView2_NewWindowRequested(sender As Object, e As CoreWebView2NewWindowRequestedEventArgs)
         e.Handled = True
-
         Try
             Dim p As New Process
             p.StartInfo.UseShellExecute = True
@@ -38,7 +37,7 @@ Public Class Main
             p.StartInfo.WindowStyle = ProcessWindowStyle.Normal
             p.Start()
         Catch ex As Exception
-            'Handle exception
+            ' Handle exception
         End Try
     End Sub
 
@@ -49,13 +48,18 @@ Public Class Main
     Private Sub Main_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         If AllowClose = False Then
             e.Cancel = True
-            Hide()
+            ShowInTaskbar = False
+            Visible = False
         End If
     End Sub
 
     Protected Overrides Sub WndProc(ByRef m As Message)
         If m.Msg = Hotkey.WM_HOTKEY Then
-            Hotkey.handleHotKeyEvent(m.WParam)
+            Try
+                Hotkey.handleHotKeyEvent(m.WParam, Me)
+            Catch
+                ' Ignore any hotkey-related issues silently
+            End Try
         End If
         MyBase.WndProc(m)
     End Sub
@@ -70,7 +74,6 @@ Public Class Main
         DoShow()
     End Sub
 
-
     Private Sub Startup_Tick(sender As Object, e As EventArgs) Handles Startup.Tick
         Startup.Enabled = False
         Dim s() As String = Environment.GetCommandLineArgs()
@@ -80,7 +83,7 @@ Public Class Main
                     Close()
             End Select
         Next
-        Opacity = 100
+        Opacity = 1.0
     End Sub
 
     Private Sub RestartToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RestartToolStripMenuItem.Click
@@ -93,15 +96,17 @@ Public Class Main
 
             Application.Exit()
         Catch ex As Exception
-            'Handle exception
+            ' Handle exception
         End Try
     End Sub
-    Public Shared Sub DoShow()
-        If Main.WindowState = FormWindowState.Minimized Then
-            Main.WindowState = FormWindowState.Maximized
+
+    Public Sub DoShow()
+        ShowInTaskbar = True
+        Visible = True
+        If WindowState = FormWindowState.Minimized Then
+            WindowState = FormWindowState.Normal
         End If
-        Main.Show()
-        Main.Activate()
+        Activate()
     End Sub
 End Class
 
@@ -109,9 +114,6 @@ Public Class Hotkey
 
 #Region "Declarations - WinAPI, Hotkey constant and Modifier Enum"
 
-    ''' <summary>
-    '''     Declaration of winAPI function wrappers. The winAPI functions are used to register / unregister a hotkey
-    ''' </summary>
     Private Declare Function RegisterHotKey Lib "user32" _
         (hwnd As IntPtr, id As Integer, fsModifiers As Integer, vk As Integer) As Integer
 
@@ -125,8 +127,7 @@ Public Class Hotkey
         Control = &H2
         Shift = &H4
         Winkey = &H8
-    End Enum _
-    'This enum is just to make it easier to call the registerHotKey function: The modifier integer codes are replaced by a friendly "Alt","Shift" etc.
+    End Enum
 
 #End Region
 
@@ -143,11 +144,11 @@ Public Class Hotkey
     End Sub
 
     Public Shared Sub unregisterHotkeys(ByRef sourceForm As Form)
-        UnregisterHotKey(sourceForm.Handle, 1)  'Remember to call unregisterHotkeys() when closing your application.
+        UnregisterHotKey(sourceForm.Handle, 1)
     End Sub
 
-    Public Shared Sub handleHotKeyEvent(hotkeyID As IntPtr)
-        Main.DoShow()
+    Public Shared Sub handleHotKeyEvent(hotkeyID As IntPtr, targetForm As Main)
+        targetForm.DoShow()
     End Sub
 
 #End Region
