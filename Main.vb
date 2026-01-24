@@ -19,11 +19,6 @@ Public Class Main
         End Try
     End Sub
 
-    Private Sub Main_Invalidated(sender As Object, e As InvalidateEventArgs) Handles Me.Invalidated
-        ' Register hotkey
-        Hotkey.registerHotkey(Me, "ESC", Hotkey.KeyModifier.Alt)
-    End Sub
-
     Private Sub WV_CoreWebView2InitializationCompleted(sender As Object, e As CoreWebView2InitializationCompletedEventArgs) Handles WV.CoreWebView2InitializationCompleted
         AddHandler WV.CoreWebView2.NewWindowRequested, AddressOf CoreWebView2_NewWindowRequested
     End Sub
@@ -55,11 +50,8 @@ Public Class Main
 
     Protected Overrides Sub WndProc(ByRef m As Message)
         If m.Msg = Hotkey.WM_HOTKEY Then
-            Try
-                Hotkey.handleHotKeyEvent(m.WParam, Me)
-            Catch
-                ' Ignore any hotkey-related issues silently
-            End Try
+            Hotkey.handleHotKeyEvent(m.WParam, Me)
+            Return
         End If
         MyBase.WndProc(m)
     End Sub
@@ -103,21 +95,32 @@ Public Class Main
     Public Sub DoShow()
         ShowInTaskbar = True
         Visible = True
+
         If WindowState = FormWindowState.Minimized Then
             WindowState = FormWindowState.Normal
         End If
+
+        TopMost = True
+        TopMost = False
         Activate()
     End Sub
+
+    Private Sub Main_HandleCreated(sender As Object, e As EventArgs) Handles Me.HandleCreated
+        Hotkey.registerHotkey(Me, "ESC", Hotkey.KeyModifier.Alt)
+    End Sub
+
+    Private Sub Main_HandleDestroyed(sender As Object, e As EventArgs) Handles Me.HandleDestroyed
+        Hotkey.unregisterHotkeys(Me)
+    End Sub
+
 End Class
 
 Public Class Hotkey
 
 #Region "Declarations - WinAPI, Hotkey constant and Modifier Enum"
 
-    Private Declare Function RegisterHotKey Lib "user32" _
-        (hwnd As IntPtr, id As Integer, fsModifiers As Integer, vk As Integer) As Integer
-
-    Private Declare Function UnregisterHotKey Lib "user32" (hwnd As IntPtr, id As Integer) As Integer
+    Private Declare Auto Function RegisterHotKey Lib "user32" (hwnd As IntPtr, id As Integer, fsModifiers As Integer, vk As Integer) As Boolean
+    Private Declare Auto Function UnregisterHotKey Lib "user32" (hwnd As IntPtr, id As Integer) As Boolean
 
     Public Const WM_HOTKEY As Integer = &H312
 
