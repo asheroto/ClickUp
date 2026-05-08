@@ -16,10 +16,10 @@
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="Manufacturer" Value="asheroto"/>
-    <ROW Property="ProductCode" Value="1033:{058092F0-ED4F-4866-A459-557512066761} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{196E3286-F686-43F0-ABE6-FFC4AD3C0A1B} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="ClickUp"/>
-    <ROW Property="ProductVersion" Value="1.1.6.0" Options="32"/>
+    <ROW Property="ProductVersion" Value="1.1.7.0" Options="32"/>
     <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:ReallySuppress"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
@@ -105,7 +105,7 @@
     <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
-    <ROW TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" SignOptions="7" SignTool="0" UseSha256="1" Thumbprint="9951AAD2AD06987C4EBF970E618B59FF043AB82E Subject: Asher Solutions Inc&#10;Issuer: DigiCert Global G3 Code Signing ECC SHA384 2021 CA1&#10;Valid from 03/04/2025 to 02/27/2026" Subject="CN=Asher Solutions Inc, O=Asher Solutions Inc, L=Muskogee, S=Oklahoma, C=US" Store="User\MY"/>
+    <ROW TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" SignOptions="7" SignTool="0" UseSha256="1" Subject="CN=Asher Solutions Inc, O=Asher Solutions Inc, L=Muskogee, S=Oklahoma, C=US" Store="User\MY"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
     <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>

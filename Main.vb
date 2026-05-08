@@ -40,8 +40,8 @@ Public Class Main
         DoShow()
     End Sub
 
-    Private Sub Main_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        If AllowClose = False Then
+    Private Sub Main_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If AllowClose = False AndAlso e.CloseReason = CloseReason.UserClosing Then
             e.Cancel = True
             ShowInTaskbar = False
             Visible = False
@@ -51,6 +51,10 @@ Public Class Main
     Protected Overrides Sub WndProc(ByRef m As Message)
         If m.Msg = Hotkey.WM_HOTKEY Then
             Hotkey.handleHotKeyEvent(m.WParam, Me)
+            Return
+        End If
+        ' Block Alt key activating the menu bar after a hotkey fires
+        If m.Msg = &H112 AndAlso (m.WParam.ToInt32() And &HFFF0) = &HF100 Then
             Return
         End If
         MyBase.WndProc(m)
@@ -151,7 +155,12 @@ Public Class Hotkey
     End Sub
 
     Public Shared Sub handleHotKeyEvent(hotkeyID As IntPtr, targetForm As Main)
-        targetForm.DoShow()
+        If targetForm.Visible AndAlso targetForm.WindowState <> FormWindowState.Minimized Then
+            targetForm.ShowInTaskbar = False
+            targetForm.Visible = False
+        Else
+            targetForm.DoShow()
+        End If
     End Sub
 
 #End Region
